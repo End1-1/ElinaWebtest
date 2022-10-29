@@ -1,0 +1,222 @@
+.root{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.imageField {
+    justify-self: flex-start;
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 157px;
+    min-width: 157px;
+
+    height: auto;
+}
+
+.name {
+    text-align: left;
+}
+
+.DetailsField {
+    justify-self: flex-start;
+    margin-left: 50px;
+}
+
+.priceContent {
+    margin-top: 41px;
+    text-align: right;
+}
+
+.priceField {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.price {
+    font-size: 18px;
+    color: #2B3944;
+}
+
+.currency {
+    font-size: 10px;
+    color: #2B3944;
+}
+
+.discountedField {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.discountedPrice {
+    color: #D32626;
+    font-size: 18px;
+}
+
+.discountedCurrency {
+    color: #D32626;
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.oldPriceField {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.oldCurrency {
+    font-size: 10px;
+    color: #2B3944;
+    text-decoration: line-through;
+}
+
+.oldPrice {
+    font-size: 18px;
+    color: #2B3944;
+    text-decoration: line-through;
+}
+
+.attributes {
+    margin-top: 26px;
+}
+
+.attributesFlex {
+    display: grid;
+    align-items: center;
+    margin-bottom: 12px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 120px;
+}
+
+.attributeName {
+    font-size: 16px;
+    color: #2B3944;
+    justify-self: flex-start;
+}
+
+.optionName {
+    color: #2B3944;
+    font-size: 16px;
+    justify-self: center
+}
+
+.colorField {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #C4C4C4;
+    justify-self: center;
+}
+
+.colorSwatch {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+}
+
+.qtyField {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 2px;
+    max-width: 110px;
+}
+
+.qtyValue, .qtyText {
+    font-size: 16px;
+    color: #2B3944;
+    white-space: nowrap;
+}
+
+.qtyText {
+    justify-self: flex-start;
+}
+
+.qtyValue {
+    justify-self: center;
+}
+
+.skuField {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    white-space: nowrap;
+}
+
+.skuValue, .skuText {
+    font-size: 16px;
+    color: #2B3944;
+}
+
+.skuValue {
+    margin-left: 16px;
+}
+
+.totalField {
+    background: #eaf3f4;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 42px;
+    padding: 0 24px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .content{
+        grid-template-columns: 1fr 3fr ;
+    }
+    .DetailsField{
+        margin-left: 15px;
+    }
+    .totalValue{
+        width: 60%;
+    }
+    .oldPriceField{
+        margin-top: 0;
+        margin-right: 39px;
+    }
+    .discountedPriceContent{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .skuValue{
+        margin-left: 0;
+        text-align: start;
+    }
+    .oldPriceField{
+        margin-right: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 360px) {
+    .thumbnail{
+        max-width: 127px;
+        min-width: 127px;
+    }
+}
+

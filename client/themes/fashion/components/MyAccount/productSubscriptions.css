@@ -1,0 +1,45 @@
+.root {
+    text-align: left;
+}
+
+.content {
+    border: 1px solid #EAF1F7;
+    border-top: none;
+    padding: 50px;
+}
+
+.headline {
+    text-align: center;
+}
+
+.headline span {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.headline span:after {
+    content: '';
+    background: #5C94BD;
+    display: block;
+    width: 36px;
+    height: 1px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+@media(min-width: 769px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 768px) {
+    .content {
+        padding: 30px;
+        overflow: hidden;
+    }
+}

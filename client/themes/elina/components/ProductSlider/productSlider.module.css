@@ -1,0 +1,99 @@
+.root {
+    position: relative;
+    top:100px;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 32px;
+}
+
+.slider {
+    width: 100%;
+    height: 450px;
+}
+
+.itemRoot {
+    text-align: start;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.buttonPrev {
+    position: absolute;
+    top: 25%;
+    left: -22px;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.buttonNext {
+    position: absolute;
+    top: 24%;
+    right: -26px;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.icon {
+    composes: icon from '../IconMoon/iconMoon.module.css';
+    color: #2B3944;
+    font-size: 40px;
+}
+
+.productImage {
+    composes: productImage from '../Gallery/item.module.css';
+    max-width: 192px;
+    height: 267px;
+}
+
+@media screen and (max-width: 1360px) {
+    .buttonNext {
+        right: 6px;
+    }
+
+    .buttonPrev {
+        left: 3px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .buttonNext {
+        right: 18px;
+    }
+
+    .buttonPrev {
+        left: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productImage {
+        max-width: 170px;
+        height: 237px;
+
+    }
+}

@@ -1,0 +1,25 @@
+.root {
+    background: none;
+    border-radius: 3px;
+    font-size: 13px;
+    min-width: 7.5rem;
+    padding: 15px 18px;
+    font-weight: 700;
+    transition-duration: 384ms;
+    transition-property: background-color, color;
+    text-transform: uppercase;
+    line-height: 13px;
+    color: black;
+    border: 0;
+}
+
+.success {
+    background-color: black;
+    color: white;
+}
+
+.error {
+    background-color: transparent;
+    border: 2px solid #910a2d;
+    color: #910a2d;
+}

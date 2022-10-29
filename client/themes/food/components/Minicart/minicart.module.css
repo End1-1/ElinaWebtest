@@ -1,0 +1,149 @@
+.root {
+  margin-right: 16px;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #00000041;
+}
+
+.cartTrigger {
+  position: relative;
+  cursor: pointer;
+}
+
+.counter {
+  position: absolute;
+  display: flex;
+  font-weight: 400;
+  background-color: #ffb800;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  line-height: 15px;
+  font-size: 11px;
+  top: -25px;
+  right: -9px;
+}
+
+.dropdown {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  width: 460px;
+  height: 100vh;
+  text-align: left;
+  -moz-box-shadow: 0px 4px 4px #00000040;
+  -webkit-box-shadow: 0px 4px 4px #00000040;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px #00000040;
+  border-radius: 7px;
+  padding: 10px;
+  z-index: 10000;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 7px;
+  border-bottom: 1px solid #1f1d2b;
+}
+
+.headerCartContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headerCart {
+  margin-right: 13px;
+}
+
+.cartText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+  color: #ffb800;
+}
+
+.cancelIconContainer {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  cursor: pointer;
+}
+
+.list {
+  flex: 1;
+  padding-bottom: 34px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 19px;
+  border-top: 1px solid #1f1d2b;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actionBtn {
+  composes: button from "../Button/button.module.css";
+  max-width: 216px;
+  margin-bottom: 11px;
+}
+
+.totals {
+  margin-bottom: 11px;
+}
+
+.grandTotal {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.emptyCart > p:nth-child(1) {
+  margin-top: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+div.emptyCart > p:nth-child(2) {
+  margin-top: 17px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #878787;
+}
+
+.continueBtn {
+  composes: button from "../Button/button.module.css";
+  margin-top: 61px;
+  max-width: 266px;
+}

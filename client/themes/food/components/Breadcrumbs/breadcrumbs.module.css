@@ -1,0 +1,35 @@
+.root {
+    margin-top: 28px;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb::after {
+    content: '|';
+    margin: 0 5px;
+    color:  #46544A;
+}
+
+.crumb:last-child::after {
+    content: '';
+}
+
+.link {
+    color:#1F1D2B;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.label{
+    color:#FFB800;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .root{
+        margin-top: 11px;
+    }
+}

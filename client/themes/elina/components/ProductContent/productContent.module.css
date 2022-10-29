@@ -1,0 +1,788 @@
+.body {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 87px;
+}
+
+.left {
+    max-width: 528px;
+}
+
+.carouselWrapper {
+    position: relative;
+}
+
+.mainCarousel {
+    composes: main from '../ProductImageCarousel/carousel.module.css';
+}
+
+.imageContainer {
+    composes: imageContainer from '../ProductImageCarousel/carousel.module.css';
+}
+
+.buttonPrev {
+    composes: buttonPrev from '../ProductSlider/productSlider.module.css';
+    left: -11px
+}
+.oldPriceProduct{
+    composes: discountedOldPrice from '../Price/price.module.css';
+    position: unset;
+    height: 40px;
+}
+.slider {
+    composes: root from '../ProductSlider/productSlider.module.css';
+    height: 450px
+}
+
+.buttonNext {
+    composes: buttonNext from '../ProductSlider/productSlider.module.css';
+    right: -11px;
+}
+
+.imageContainer img {
+    height: 100%;
+
+}
+
+.thumbnail {
+    composes: thumbnail from '../ProductImageCarousel/carousel.module.css';
+}
+
+
+.titleField {
+    composes: titleField from '../ProductOptions/option.module.css';
+
+}
+
+.imageWrapper {
+    width: 500px;
+}
+
+.mainImage {
+    max-width: 100%;
+}
+
+.homeLink {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.homeLink:hover {
+    color: #FFFFFF;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1.41fr;
+    column-gap: 32px;
+    margin-top: 68px;
+    padding: 0 30px;
+}
+
+
+.sku {
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.price {
+    display: block;
+    font-size: 17px;
+    color: #ff4d41;
+}
+
+.cartActions {
+    width: 100%;
+    margin-top: 32px;
+    max-width: 416px;
+}
+
+.addToCartButton {
+    width: 100%;
+    max-width: 416px;
+    background: #1B1A1A;
+    height: 45px;
+    color: #FFF2F2;
+    text-align: center;
+    line-height: 45px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+}
+
+.phone {
+    display: block;
+    width: 100%;
+    max-width: 416px;
+    height: 45px;
+    color: #2B3944;
+    text-align: center;
+    font-size: 18px;
+    line-height: 45px;
+    outline: none;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+.openedPhoneField {
+    width: 100%;
+    max-width: 416px;
+    background: #1B1A1A;
+    height: 45px;
+    color: #FFFFFF !important;
+    text-align: center;
+    line-height: 45px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 59% 30%;
+    column-gap: 79px;
+}
+
+.shareButtonsRoot {
+    display: flex;
+    margin-top: 91px;
+}
+
+
+.shareButton {
+    margin-right: 32px;
+}
+
+.shareButton:focus {
+    outline: none !important;
+    border: none;
+}
+
+.shortDescription {
+    color: #444444;
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+.stockStatus {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.inStock {
+    display: inline-flex;
+}
+
+.inStock::before {
+    font-family: "mazdaIcons";
+    content: "\6a";
+    color: #34c0cb;
+    font-size: 18px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.reviewFormAndList {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-direction: row;
+}
+
+.relatedProducts {
+    margin-top: 20px;
+    max-height: 487px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9F1EB;
+    background: #2B525A;
+    padding: 11px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.line {
+    display: block;
+    margin: 0 16px;
+}
+
+.crumb {
+    display: inline-block;
+    
+}
+
+.crumbLink {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.crumb a {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.crumb a:hover {
+    color: #FFFFFF;
+}
+
+.crumb::after {
+    content: '|';
+    margin: 0 16px;
+}
+
+.crumb:last-child::after {
+    content: '';
+}
+
+.breadcrumbsLabel {
+    font-size: 16px;
+    color: #878787;
+    text-transform: uppercase;
+}
+
+
+.pageTitleContent {
+    text-align: center;
+    margin-top: 64px;
+}
+
+.pageTitleField {
+    text-align: center;
+    
+}
+
+.pageTitle {
+    color: #00414B;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.pageTitleTextField {
+    margin-top: 8px;
+}
+
+.pageTitleText {
+    font-family: 'Dancing Script';
+    color: #878787;
+}
+
+.nameField{
+}
+
+.productName {
+    font-size: 32px;
+    font-weight: 500;
+    color: #2B3944;
+}
+
+.skuField {
+    margin-top: 14px;
+}
+
+.sku {
+    color: #2B3944;
+    font-size: 12px;
+}
+
+.priceField {
+    margin-top: 25px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2B3944;
+}
+
+.reviewSummaryField {
+    display: flex;
+    align-items: center;
+}
+
+.reviewSummary {
+}
+
+.addReviewField {
+   margin-top: 22px;
+}
+
+.addReview {
+    color: #2B3944;
+    font-size: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.right {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+
+.options {
+    margin-top: 37px;
+}
+
+.colorOptionRoot {
+    margin-top: 30px;
+}
+
+.descriptionLine {
+    width: 100%;
+    max-width: 528px;
+    height: 2px;
+    background: #2B3944;
+    margin-top: 53px;
+}
+
+.shortDescription {
+    width: 100%;
+    max-width: 528px;
+}
+
+.shortDescriptionTitleField {
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.shortDescriptionTitle {
+    color: #2B3944;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.line{
+    position: relative;
+    cursor: pointer;
+}
+.descLine {
+    width: 19px;
+    margin-right: 19px;
+    height: 2px;
+    border-top: 2px solid #2B3944;
+}
+.activeLine{
+    width: 19px;
+    margin-right: 19px;
+    border-bottom: 2px solid #2B3944;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 1.5px;
+}
+
+.flexActionTitles {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+    margin-top: 108px;
+}
+
+.actionTitle {
+    color: #2B3944;
+    font-size: 18px;
+    margin-left: 31px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.activeActionTitle {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.actionFields {
+    margin-top: 49px;
+    margin-bottom: 141px;
+    margin-top: 49px;
+    margin-bottom: 141px;
+    max-width: 1106px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.relatedProductsTitleField {
+    display: flex;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.description {
+    margin-bottom: 47px;
+    color:  #2B3944;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.relatedProductsTitle {
+    color: #2B3944;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.relatedRightLine {
+    width: 100%;
+    max-width: 528px;
+    height: 2px;
+    margin-left: 57px;
+    background: #2B3944;
+}
+
+.nextPage {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 36px;
+    z-index: 2;
+    left: -17px;
+    cursor: pointer;
+}
+
+.prevPage {
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: -61px;
+    right: 205px;
+    cursor: pointer;
+}
+
+.nextPageLine {
+    width: 90px;
+    height: 2px;
+    background: #2B3944;
+}
+
+.nextPageTextField {
+    margin-left: 12px;
+}
+
+.prevPageTextField {
+    margin-right: 12px;
+}
+
+.nextPageText {
+    font-size: 12px;
+    color: #2B3944;
+}
+
+.carouselRoot {
+    max-width: 400px;
+}
+
+.richContent {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: start;
+}
+
+
+.relatedLeftLine {
+    display: block;
+}
+
+@media screen and (max-width: 1300px) {
+    .actionFields {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .reviewSummaryField {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .actions {
+        column-gap: 50px;
+    }
+
+    .shareButton {
+        margin-right: 20px;
+
+    }
+}
+
+@media screen and (max-width: 900px){
+    .actions{
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+    .shareButtonsRoot{
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
+    .buttonPrev{
+        left: -16px
+    }
+    .buttonNext{
+       right: -16px;
+    }
+    .reviewFormAndList {
+        flex-direction: column;
+    }
+    .colorOptionRoot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actionTitle {
+        font-size: 12px;
+        line-height: 14px;
+        color: #2B3944;
+        margin-left: 0;
+    }
+
+    .shareButtonsRoot {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .actions {
+        grid-template-rows: 120px 80px;
+        grid-template-columns:unset;
+        margin: 0 auto;
+    }
+
+    .productName {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .flexActionTitles {
+        max-width: 372px;
+    }
+
+    .actionTitle {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .slider {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .activeActionTitle {
+        font-weight: 500;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .priceField {
+        display: flex;
+        justify-content: center;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .right {
+        margin-top: 34px;
+        max-width: 372px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .shareButton {
+        margin-right: 9px;
+    }
+
+    .relatedRightLine {
+        max-width: 91px;
+        margin-left: 0;
+    }
+
+
+
+    .relatedLeftLine {
+        width: 100%;
+        max-width: 91px;
+        height: 2px;
+        background: #2B3944;
+    }
+
+    .relatedProductsTitle {
+        font-size: 12px;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+    .relatedProductsTitleField {
+        max-width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 52px;
+        margin-bottom: 30px
+    }
+
+    .relatedProductsTitle {
+        margin: 0 auto;
+    }
+
+    .top {
+        grid-template-columns: unset;
+        padding: 0;
+        margin-top: 0;
+
+    }
+
+    .carouselWrapper {
+        overflow: hidden;
+    }
+
+    .mainCarousel {
+        margin: 0 20px !important;
+    }
+
+    .nextButton {
+        display: none;
+    }
+
+    .prevButton {
+        display: none;
+    }
+
+    .nextPage {
+        left: -50px;
+    }
+
+
+
+    .descriptionLine {
+        margin-top: 0;
+    }
+
+    .actionTitleField {
+        margin: 16px 0;
+    }
+
+    .actionTitle {
+        font-size: 12px;
+        line-height: 14px;
+        color: #2B3944;
+    }
+
+    .description {
+        margin-top: 10px;
+        text-align: start;
+    }
+
+
+    .titleField {
+        justify-content: center;
+    }
+
+    .carousel {
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+    .reviewSummaryField {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prevPage {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        top: 36px;
+        cursor: pointer;
+        right: -50px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .left {
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .buttonPrev {
+        left: 14px;
+        top: 20%;
+    }
+
+    .buttonNext {
+        right: 14px;
+        top: 20%;
+    }
+}
+
+.rightContent{
+    width: 100%;
+    height: 100%;
+    padding:0 20px
+}
+
+.tab {
+    margin-top: 9px;
+    border-top: 2px solid #2B3944;
+    border-bottom: 2px solid #2B3944;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+.tabTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.errorMessage {
+    color: red;
+    margin-top: 15px;
+}

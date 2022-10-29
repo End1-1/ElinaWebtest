@@ -1,0 +1,44 @@
+.root {
+    display: block;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #2B3944;
+    margin-bottom: 28px;
+}
+
+.radioDiv span img{
+    margin-top: 4px;
+    margin-right: 16px;
+}
+
+.radioDiv span div {
+    display: flex;
+}
+
+.radioDiv span p {
+    margin-top: 4px;
+}
+
+.radio {
+    composes: radio from '../Radio/radio.module.css';
+    margin-bottom: 19px;
+    display: flex;
+}
+
+.radioLabel {
+    letter-spacing: 0.2px;
+    color: #2B3944;
+    margin-left: 43px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.radioWrapper {
+    composes: checkmarkWrapper from '../Radio/radio.module.css';
+    top: 4px;
+}

@@ -1,0 +1,26 @@
+.settings {
+    display: flex;
+    margin: 4px;
+    background: #e4e4e4;
+    padding: 3px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.maxDepth .maxDepthInput {
+    width: 30px;
+}
+
+.root .preview {
+    margin: 20px;
+}
+
+.submenu {
+    padding-left: 20px;
+    list-style: none;
+    text-align: left;
+}
+
+.submenu.level1 {
+    padding-left: 0;
+}

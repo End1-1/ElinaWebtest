@@ -1,0 +1,56 @@
+.root {
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    padding: 1px;
+    margin-right: 4.5px;
+    border: 1px solid #EBEBEB;
+}
+
+.root:first-child {
+    margin-left: 0;
+}
+
+.color {
+    border: none;
+    background-color: var(--venia-swatch-bg);
+    height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    --venia-swatch-bg: var(--venia-grey);
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .root {
+        margin-top: 6px;
+    }
+
+    .color {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+
+.root_selected {
+    composes: root;
+    border: 1px solid #00414B;
+}
+
+.root_selected .color {
+}
+
+.root_focused {
+    composes: root;
+}
+
+.root_selected_focused {
+    composes: root_selected;
+}

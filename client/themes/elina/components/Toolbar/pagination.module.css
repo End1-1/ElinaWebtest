@@ -1,0 +1,59 @@
+.root {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+.prev {
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    outline: none;
+    background: #fff;
+    margin-right: 5px;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 18px;
+    margin-right: -15px;
+    color: #2B3944;
+}
+
+.next {
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    outline: none;
+    color: #2B3944;
+    background: none;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-size: 18px;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.dot {
+    background: #C4C4C4;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: 2px;
+}

@@ -1,0 +1,35 @@
+.root {
+    color: #444;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tabs span {
+    display: block;
+    cursor: pointer;
+}
+
+.tabs span.active {
+    border-bottom: 1px solid grey;
+}
+
+.productImage {
+    width: 100%;
+    height: auto;
+}
+
+.productImageWrapper {
+
+}
+
+@media (min-width: 768px) {
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+}

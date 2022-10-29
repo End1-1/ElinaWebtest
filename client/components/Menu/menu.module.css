@@ -1,0 +1,124 @@
+.root {
+    color: #444;
+}
+
+.ulDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ulMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menuItem {
+    list-style: none;
+    margin: 10px;
+}
+
+.link {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    color: #444;
+    text-transform: uppercase;
+}
+
+.link:hover, .link:focus {
+    color: #f45900;
+}
+
+.main {
+    composes: root;
+}
+
+.top {
+    
+}
+
+.top ul li {
+    list-style: none;
+}
+
+.top ul li a {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 0;
+    color: #444;
+    text-decoration: none;
+    font-size: 12px;
+    
+}
+
+.root {
+    z-index: 100;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 31px;
+    margin-top: 45px;
+}
+
+.root > ul {
+    display: flex;
+    text-align: left;
+}
+
+.root > ul > li > .submenu {
+    display: none;
+}
+
+.root:not(.mobile) > ul > li:hover .submenu {
+    display: grid;
+}
+
+.megamenu {
+    position: absolute;
+    width: 100%;
+    grid-auto-flow: column;
+    display: grid;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    background: #f1f1f1;
+    padding: 15px;
+    margin-top: 5px;
+    z-index: 100;
+    left: 0;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 100;
+    margin-top: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    background: #e0e0e0;
+}
+
+.submenu .link {
+
+}
+
+.preview ul li {
+    list-style: none;
+    padding: 5px;
+    margin: 4px;
+}
+
+/* Mobile Menu */
+
+.root.mobile ul {
+    display: block;
+}
+
+.root.mobile .submenu {
+    position: initial;
+}
+
+.root.mobile ul li {
+
+}

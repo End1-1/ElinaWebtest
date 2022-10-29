@@ -1,0 +1,144 @@
+.root {
+    margin-right: 13px;
+    position: relative;
+    z-index: 10000;
+}
+
+.cartTrigger {
+    position: relative;
+    cursor: pointer;
+    color: #000000;
+}
+
+.cartTrigger span:before {
+    font-size: 23px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.cartTrigger.open span:before {
+    color: #5C94BD;
+}
+
+.cartTrigger.open:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+.counter {
+    font-weight: 400;
+    background-color: #FF4867;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    width: 23px;
+    font-size: 14px;
+    top: -18px;
+    right: -12px;
+    z-index: 999999;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 38px;
+    width: 410px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 6px;
+}
+
+.cartTrigger.open + .dropdown {
+    display: block;
+}
+
+.dropdown .title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #3F3F3F;
+    border-bottom: 1px solid #D0CFCF;
+    display: block;
+    padding-bottom: 13px;
+    margin-bottom: 12px;
+}
+
+.footer {
+    padding-top: 15px;
+    border-top: 1px solid #D0CFCF;
+}
+
+.footer .totals {
+    margin-bottom: 15px;
+}
+
+.footer .totals p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .totals p {
+    font-weight: 700;
+    color: #000000;
+}
+
+.footer .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .actions a {
+    width: 100%;
+}
+
+.footer .actions a:first-child {
+    padding-right: 5px;
+}
+
+.footer .actions a button {
+    width: 100%;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.footer .actions a:first-child button {
+    border: 1px solid #5C94BD;
+    color: #5C94BD;
+}
+
+.footer .actions a:last-child button {
+    border: 1px solid transparent;
+}
+
+.footer .actions a button:hover {
+    color: white;
+}
+
+@media(max-width: 992px) {
+    .root,
+    .cartTrigger span:before {
+        margin-right: 0;
+    }
+    .cartTrigger {
+        color: #000000 !important;
+    }
+}
+

@@ -1,0 +1,162 @@
+.root {
+    width: 100%;
+    margin-top: 65px;
+display:flex;
+flex-direction:column;
+}
+
+.body {
+    /* display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 30px; */
+margin-top:20px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 35px;
+    column-gap: 25px;
+}
+
+.list .root {
+    text-align: start;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.descriptionField {
+    margin: 8px auto;
+    text-align: center;
+}
+
+.description {
+    font-family: 'Dancing Script';
+    color: #878787;
+}
+
+.link {
+    color: #000000;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+}
+
+.banner {
+    max-height: 743px;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner a img {
+    min-width: 415px;
+    max-height: 700px;
+}
+
+.content {
+    composes: content from '../Banner/banner.module.css';
+}
+
+.content p {
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    margin-bottom: 49px;
+}
+
+.bannerOverlay {
+    position:absolute;
+    top: 0;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    
+    opacity: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1290px) {
+    .list {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 635px;
+        margin: 0 auto;
+    }
+    .body{
+        max-width: 1079px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .list {
+        grid-template-columns: 1fr 1fr;
+        max-width: 420px;
+    }
+    .body{
+        max-width: 863px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .root {
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+    }
+
+    .body {
+        grid-template-columns: 1fr;
+    }
+
+    .banner {
+        justify-self: center;
+    }
+
+    .banner a img {
+        min-width: unset;
+        max-height: unset;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .bannerOverlay {
+        height: 99%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .root {
+        margin-top: 31px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bannerOverlay {
+        height: 99%;
+        width: 100%;
+    }
+}
+.productImage{
+    width: 100%;
+    height: 100%;
+}
+.productImageWrapper{
+    composes: productImageWrapper from '../ProductList/productList.module.css';
+    max-height: 262px;
+    height: 100%;
+}

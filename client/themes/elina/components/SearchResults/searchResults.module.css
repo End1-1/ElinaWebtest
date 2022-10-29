@@ -1,0 +1,215 @@
+.body {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    color: #2B3944;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.productList {
+    margin-top: 50px;
+}
+
+.filter {
+    max-width: 97%;
+    text-align: start;
+}
+
+.filtersAndList {
+    max-width: 1310px;
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 142px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 32px;
+    grid-row-gap: 53px;
+}
+
+.itemRoot {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.image {
+    position: relative;
+    opacity: 0.75;
+}
+
+.image img {
+    width: 100%;
+}
+
+.noResult {
+    font-size: 16px;
+    text-align: left;
+}
+
+.notFound {
+    padding: 80px 0;
+    font-size: 24px;
+    color: #2B525A;
+    grid-template-columns: 1fr;
+}
+
+.footerTools {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 63px;
+}
+
+@media screen and (max-width: 1330px) {
+    .list {
+        max-width: 658px;
+    }
+
+    .filtersAndList {
+        max-width: 1100px;
+    }
+    .image{
+        overflow: hidden;
+        text-align: center;
+    }
+    .image img{
+        width: unset;
+        position: relative;
+        left: 100%;
+        margin-left: -200%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .filtersAndList {
+        max-width: 1000px;
+        column-gap: 40px;
+    }
+}
+
+
+.filterContainer {
+    max-width: 418px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1335px) {
+    .list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .filtersAndList {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .filtersAndList {
+        column-gap: 50px;
+    }
+    .list{
+        max-width: 390px;
+        column-gap: 10px;
+    }
+    .image img{
+        min-height: 150px;
+        max-height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .filtersAndList {
+        grid-template-columns: 1fr;
+    }
+
+    .list {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+    .filterContainer{
+        max-width: 370px;
+    }
+
+    .title {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .noResult {
+        font-size: 18px;
+        max-width: 400px;
+    }
+}
+
+.filterButton {
+    height: 36px;
+    padding: 0 9px;
+    border: 1px solid #2B3944;
+    box-sizing: border-box;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #2B3944;
+}
+
+
+.bannerRoot{
+    composes: root from '../Banner/banner.module.css';
+}
+
+.filterOpen:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999988;
+    cursor: initial;
+}
+
+.filterIcon {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 400px){
+.filtersAndList{
+    margin: 30px 0;
+}
+    .list{
+        column-gap: 5px;
+        max-width: 320px;
+    }
+    .filterContainer{
+        max-width: 320px;
+    }
+
+}

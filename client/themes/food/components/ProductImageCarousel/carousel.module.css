@@ -1,0 +1,155 @@
+.root {
+
+}
+
+.imageContainer {
+    position: absolute;
+    top: -140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.main{
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+
+.slide {
+    display: flex;
+    align-items: center;
+}
+
+
+.imageContainer img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+
+.currentImage {
+    width: 100%;
+}
+
+.currentImage_placeholder {
+    composes: currentImage;
+    background-color: rgb(var(--venia-grey));
+}
+
+
+.thumbnail {
+    max-width: 240px;
+}
+
+.thumbnailContainer :global(.slideInner___2mfX9){
+    display: flex;
+    align-items: center;
+}
+
+.thumbnailContainer {
+    position: relative;
+    margin-top: 15px;
+    max-width: 485px;
+    margin-left: auto;
+    max-height: 220px;
+    margin-right: auto;
+}
+
+:global(.focusRing___1airF) {
+    outline: none !important;
+}
+
+:global(.carousel__slide-focus-ring) {
+    outline: none !important;
+}
+
+.imgSlide {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    max-width: 220px;
+    height: auto;
+}
+.imgSlide img{
+    width: auto;
+    border-radius: 5%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 1250px)  {
+    .imgSlide {
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .imageContainer {
+        position: relative;
+        top: 0;
+    }
+}
+
+
+
+.backThumbnail {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    z-index: 5;
+    color: #FFB800;
+    cursor: pointer;
+}
+.backThumbnail :nth-child(1){
+    transform: rotate(90deg);
+}
+.nextThumbnail :nth-child(1){
+    transform: rotate(-90deg);
+}
+
+.nextThumbnail {
+  composes: backThumbnail;
+    right: -22px;
+    left: unset;
+
+}
+
+.dots{
+    display: grid;
+    justify-content: center;
+    margin: 13px auto;
+    column-gap: 5px;
+    grid-auto-flow: column;
+}
+
+.dot{
+    background: #46544A;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    outline: none;
+    border: 0;
+}
+
+.dot:disabled{
+    background: #FFB800;
+}
+
+
+@media screen and (max-width: 768px){
+    .main {
+        max-width: 100%;
+    }
+}
+
+.thumbnailSmall{
+    max-width: 240px;
+    margin: 0 auto;
+}

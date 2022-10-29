@@ -1,0 +1,222 @@
+.root {
+    display: block;
+}
+
+.root div {
+    display: inline-block;
+    position: relative;
+    z-index: 10000;
+}
+
+.body {
+    position: relative;
+    width: 100%;
+    max-width: 821px;
+    display: flex;
+    align-items: center;
+}
+
+.searchInput {
+    outline: none;
+    border: none;
+    width: 100%;
+    max-width: 876px;
+    padding-left: 76px;
+    background: #FFFFFF;
+}
+
+.searchInput::placeholder {
+    color: #2B3944;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    opacity: 0.5
+}
+
+.searchIconFeild {
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+}
+
+.closeField {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.closeField span {
+    color: #2B525A;
+}
+
+.right {
+    right: 150px;
+}
+
+.searchIcon {
+    font-size: 31px;
+    color: #2B525A;
+}
+
+.root div input:focus {
+    border-color: #85b7d9;
+}
+
+/* .root div.loading input {
+    background-image: url('./loading.gif');
+    background-position: right 10px bottom 5px;
+    background-size: 25px;
+} */
+
+.result {
+    display: inline-block;
+    position: absolute;
+    left: 75px;
+    background: white;
+    z-index: 999;    
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15);
+    max-height: 365px;
+    overflow-y: auto;
+    top: 30px;
+    overflow-x: hidden;
+    width: 73%;
+}
+
+.result h3 {
+    text-align: center;
+    line-height: 32px;
+}
+
+.item {
+    padding: 12px;
+    display: flex;
+    border: 1px solid #d4d4d5;
+    text-decoration: none;
+}
+
+.item:not(:first-child) {
+    border-top: none;
+}
+
+.info p {
+    word-break: break-all;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.item img {
+    max-width: 100px;    
+}
+
+.item strong {    
+    font-size: 12px;
+    color: #910a2d;
+    width: 100%;
+    text-align: left;
+}
+
+.info p:last-child {
+    width: 100%;
+    color: #444;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.seeAll {
+    padding: 10px 12px;
+    display: block;
+    border: 1px solid #d4d4d5;
+    border-top: none;
+    color: #444;
+    text-decoration: none;
+    text-align: left;
+}
+
+.seeAll:hover {
+    color: #2B525A;
+}
+
+@media screen and (max-width: 1336px) {
+    .result {
+        width: 84%;
+    }
+
+    .right {
+        right: 6%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .result {
+        width: 81%;
+    }
+    
+    .right {
+         right: 55px
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .result {
+        width: 84%;
+    }
+
+    .right {
+        right: 48px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .right {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .searchIcon {
+        font-size: 24px;
+    }
+
+    .closeField span {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .result {
+        width: 80%;
+    }
+
+    .right {
+        right: 7%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .result {
+        width: 78%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .result {
+        width: 76%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .result {
+        width: 74%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .result {
+        display: none;
+    }
+}

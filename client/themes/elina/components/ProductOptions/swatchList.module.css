@@ -1,0 +1,14 @@
+.root {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: -19px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px){
+  .root {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}

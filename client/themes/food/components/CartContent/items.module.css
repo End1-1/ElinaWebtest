@@ -1,0 +1,14 @@
+.root {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 79px;
+    border-right: 1px solid #1F1D2B;
+    padding: 0 12px;
+}
+
+@media screen and (max-width: 850px) {
+    .root {
+        padding: unset;
+        border-right: unset;
+    }
+}

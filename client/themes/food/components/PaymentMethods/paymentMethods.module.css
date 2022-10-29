@@ -1,0 +1,25 @@
+.root {
+  width: 100%;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  border: 1px solid #e6e6e6;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.checkbox.selected {
+  background: #eaeaea;
+}
+
+.isSubmitting::before {
+  color: #ff4d40;
+}

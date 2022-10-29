@@ -1,0 +1,54 @@
+/* Only Default Stuff, not related to any theme */
+
+@font-face {
+    font-family: "shopianFrontendDefault";
+    src:url("../../fonts/icons/shopian-frontend-default.eot");
+    src:url("../../fonts/icons/shopian-frontend-default.svg") format("svg"),
+    url("../../fonts/icons/shopian-frontend-default.ttf") format("ttf"),
+    url("../../fonts/icons/shopian-frontend-default.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/roboto/Roboto-Regular.ttf') format('woff2')
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../../fonts/roboto/Roboto-Medium.ttf') format('woff2')
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../../fonts/roboto/Roboto-Bold.ttf') format('woff2')
+}
+
+:root {
+    --shopian-main-color: #FFE066;
+}
+
+:global(body.react-loaded) {
+    transition: opacity .3s;
+    opacity: 1;
+}
+
+:global(.builder-button) {
+    color: black;
+    background-color: var(--shopian-main-color);
+    border-radius: 50%;
+    border: none;
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    top: 0;
+    right: 36px;
+    cursor: pointer;
+}

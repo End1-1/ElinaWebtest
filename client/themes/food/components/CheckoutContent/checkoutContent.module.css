@@ -1,0 +1,139 @@
+.root {
+  color: #444;
+  padding: var(--container-padding);
+  margin-bottom: 134px;
+}
+
+.breadcrumbsBox {
+  width: 100%;
+  text-align: start;
+  color: #ffb800;
+  margin-top: 1px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  grid-gap: 71px;
+  margin-top: 39px;
+}
+
+.left {
+  display: flex;
+  column-gap: 29px;
+  border-right: 1px solid #1f1d2b;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  min-width: 304px;
+  padding-right: 29px;
+}
+
+.methods {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 304px;
+  margin-top: 9px;
+}
+
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 304px;
+}
+
+.deliveryHeader,
+.methodsHeader,
+.detailsHeader {
+  border-bottom: 1px solid #1f1d2b80;
+}
+
+.deliveryHeading,
+.methodsHeading,
+.detailsHeading {
+  padding: 0 19px;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: start;
+  line-height: 25px;
+  color: #1f1d2b;
+}
+
+.deliveryBody,
+.methodsBody,
+.detailsBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.methodsBody {
+  padding: 0 17px;
+  padding-top: 28px;
+}
+
+.deliveryBody {
+  padding: 0 19px;
+  padding-top: 28px;
+}
+
+.detailsBody {
+  padding-top: 30px;
+}
+
+.detailsBody > div {
+  width: 100%;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 92px;
+}
+
+.btn {
+  composes: button from "../Button/button.module.css";
+  min-width: unset;
+  max-width: 266px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .root {
+    padding: var(--container-mobile-padding);
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    grid-template-columns: auto;
+    grid-gap: 29px;
+  }
+
+  .left {
+    justify-content: space-between;
+    border-right: unset;
+  }
+
+  .payment {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1280px) {
+  .main {
+    grid-template-columns: 6fr 2fr;
+    grid-gap: 29px;
+  }
+}

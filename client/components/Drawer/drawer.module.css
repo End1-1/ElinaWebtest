@@ -1,0 +1,20 @@
+.root {
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: left;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    background: #c7c7c7;
+    z-index: 100000;
+    width: 0;
+}
+
+.root.open {
+    transform: translateX(0);
+    width: 100%;
+}

@@ -1,0 +1,43 @@
+.root {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.total {
+     display: flex;
+    flex-wrap: nowrap;
+    column-gap: 30px;
+    align-items: flex-end;
+    text-align: right;
+    margin: 10px 5px;
+}
+
+.totalShipping{
+    border-bottom:1px solid #C4C4C4;
+    padding-bottom: 14px;
+}
+.grandTotal {
+    font-size: 18px;
+    color: var(--dark-color);
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+
+
+.price {
+    white-space: nowrap;
+    text-align: start;
+    white-space: nowrap;
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.totalName {
+    width: 40%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

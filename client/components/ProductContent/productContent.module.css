@@ -1,0 +1,104 @@
+.root {
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .root {
+        padding: 20px;
+    }
+}
+
+.routes {
+    width: 500px;
+    height: 500px;
+}
+
+.imageWrapper {
+    width: 500px;
+}
+
+.mainImage {
+    max-width: 100%;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        grid-template-columns: unset;
+    }
+}
+
+.sku {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 211.7%;
+    color: #AFAFAF;
+    text-transform: uppercase;
+}
+
+.price {
+    display: block;
+    padding: 10px 0;
+    font-size: 17px;
+    color: #ff4d41;
+}
+
+.cartActions {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1.5rem 0;
+}
+
+.shortDescription {
+    color: #444444;
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+.stockStatus {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.inStock {
+    display: inline-flex;
+}
+
+.inStock::before {
+    font-family: "mazdaIcons";
+    content: "\6a";
+    color: #34c0cb;
+    font-size: 18px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.reviewFormAndList {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-direction: row;
+}
+
+.relatedProducts {
+    margin-top: 20px;
+}
+
+.relatedProducts h4 {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .reviewFormAndList {
+        flex-direction: column;
+    }
+}

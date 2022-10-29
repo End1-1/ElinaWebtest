@@ -1,0 +1,51 @@
+.root {
+    display: flex;
+    margin-bottom: 13px;
+}
+
+.thumbnailWrapper img {
+    width: 77px;
+    border: 1px solid #EFEFEF;
+}
+
+.details {
+    word-break: break-all;
+    padding-left: 23px;
+    width: 100%;
+}
+
+.details .removeIcon {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.details .removeIcon button {
+    background: #EFEFEF;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.details .removeIcon button span {
+    font-size: 6px;
+}
+
+.details .name {
+    display: block;
+    color: #A3A3A3;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.details .price {
+    color: #3F3F3F;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.details .quantity {
+    float: right;
+    font-size: 14px;
+    color: #3F3F3F;
+}

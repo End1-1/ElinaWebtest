@@ -1,0 +1,77 @@
+.root {
+    display: flex;
+}
+
+.flag {
+    cursor: pointer;
+    margin: 10px;
+    width: 25px;
+    display: block;
+}
+
+.flag img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.languageSelect {
+    composes: root from '../Select/select.module.css';
+}
+
+.languageSelect div p {
+    border: none;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    text-transform: capitalize;
+    min-width: unset;
+    font-size: 14px;
+}
+
+.languageSelect div p span:after {    
+    top: 19px;
+    right: 1px;
+    width: 7px;
+    height: 6px;
+    font-size: 7px;
+}
+
+.open {
+    composes: open from '../Select/select.module.css';
+}
+
+.languageSelect div ul {
+    margin-top: 5px;
+    z-index: 999;
+    width: auto;
+    right: 0;
+}
+
+.languageSelect div ul li {
+    color: #000000;
+    text-transform: capitalize;
+    padding: 15px 40px;
+}
+
+.languageSelect div ul li:hover {
+    background: #E8F2F8;
+}
+
+
+@media(min-width: 993px) {
+    .languageSelect div.open p {
+        color: white;
+    }
+}
+
+@media(max-width: 992px) {
+    .languageSelect div p {
+        color: #3F3F3F;
+    }
+    .languageSelect div p span:after {
+        color: #000000;
+    }
+    .languageSelect div ul {
+        border-top: 1px solid rgb(213, 213, 213);
+    }
+}

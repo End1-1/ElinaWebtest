@@ -1,0 +1,227 @@
+.root {
+    margin-bottom: 12px;
+    margin-top: 94px;
+}
+
+.phoneOrEmail {
+    text-align: center;
+    margin-top: 53px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.phoneOrEmail span {
+    color: #5C94BD;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.phoneOrEmail span:hover {
+    border-bottom: none;
+}
+
+.phoneOrEmail span:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid #5C94BD;
+    transform: scaleX(0);
+    transition: transform .25s ease-in-out;
+}
+
+.phoneOrEmail span.active {
+    font-weight: 400;
+}
+
+:global(.react-tel-input) :global(.special-label) {
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    color: #878787;
+    left: 3px;
+    top: -18px;
+    background: unset;
+    font-family: 'Arial AMU';
+}
+
+:global(.react-tel-input) :global(.special-label)::after {
+    content: "*";
+    color: #00414B;
+    margin-left: 3px;
+}
+
+
+.validationError {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+    color: red;
+    font-weight: 300;
+    position: absolute;
+    top: 40px;
+}
+
+
+.actions {
+    text-align: right;
+    letter-spacing: 0.2px;
+    color: #878787;
+}
+
+.actions button {
+    background: none !important;
+    color: #00414B !important;
+    font-weight: 300 !important;
+    padding: 0;
+    font-size: 12px;
+    text-transform: capitalize;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.phoneAction, .emailAction {
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 147px;
+    color: #000000;
+    background: #F9F1EB;
+    cursor: pointer;
+}
+
+.emailAction {
+    margin-left: 16px;
+}
+
+.phoneAction.active, .emailAction.active {
+    background: #fff;
+    border: 1px solid #000000;
+}
+
+.socialLogins {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.field {
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.input {
+    composes: input from '../TextInput/textInput.module.css';
+    margin-bottom: 35px;
+    max-width: 400px;
+    padding: 12px;
+    color: #2B3944;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.passwordInput {
+    composes: input;
+    margin-bottom: 0px;
+}
+
+.phoneFieldInput {
+    composes: input;
+    width: 100%;
+    background-color: #fff !important;
+    color: #101010 !important;
+}
+
+.phoneFieldInput:focus {
+    outline: none;
+}
+
+.button {
+    composes: button from '../Button/button.module.css';
+    background: #1B1A1A;
+    margin-top: 75px;
+    max-width: 294px;
+    width: 100%;
+    height: 45px;
+}
+
+.button:hover {
+    background: #1B1A1A;
+    color: #fff;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button span {
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFF2F2;
+    font-family: 'Arial AMU';
+}
+
+
+.or {
+    margin: 18px auto;
+    margin-bottom: 0
+}
+
+.fbButton {
+    composes: button;
+    color: #fff;
+    margin-top: 18px;
+    background: #2196F3;
+    border-radius: 5px;
+    max-width: 190px;
+    height: 35px;
+    font-family: 'Arial AMU';
+    font-size: 10px;
+    padding: 10px;
+    text-align: right;
+}
+
+.fbButton:hover {
+    background-color: #2196F3;
+}
+
+.buttons {
+    text-align: center;
+}
+
+
+.errorField {
+    text-align: center;
+    color: red;
+    margin-bottom: 35px;
+}
+
+.successField {
+    text-align: center;
+    margin: 32px auto;
+    color: green;
+}
+
+.passwordInfoField {
+    margin-top: 5px;
+}
+
+.passwordInfo {
+    font-size: 10.5px;
+    color: #878787;
+}
+
+.togglePassword {
+    position: absolute;
+    top: 21px;
+    right: 3px;
+    cursor: pointer;
+}

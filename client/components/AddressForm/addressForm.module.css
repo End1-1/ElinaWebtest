@@ -1,0 +1,45 @@
+.root {
+    
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.button {
+    background: none;
+    border-radius: 62px;
+    font-size: 11px;
+    min-width: 7.5rem;
+    padding: 11px 15px;
+    transition-duration: 384ms;
+    transition-property: background-color, color;
+    text-transform: uppercase;
+    line-height: 13px;
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.country {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.validationError {
+    color: #910a2d;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.saveAsAddress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}

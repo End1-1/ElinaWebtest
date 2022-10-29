@@ -1,0 +1,25 @@
+.root {
+    display: block;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 8px 0;
+}
+
+.total > span:first-child {
+    font-weight: bold;
+}
+
+.total:last-child {
+    border-bottom: none;
+}
+
+.grandTotal {
+    font-size: 20px;
+    color: var(--dark-color);
+    font-weight: bold;
+}

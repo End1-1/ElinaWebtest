@@ -1,0 +1,249 @@
+.slide {
+    position: relative;
+    background-color: var(--content-background-color);
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.slide img {
+    max-width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    padding-right: 21px;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding-right: 0;
+    }
+}
+
+.prev {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.next {
+    right: 0;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.prev, .next {
+    position: absolute;
+    top: calc(50% - 39px);
+    display: block;
+    height: 79px;
+    width: 79px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.next:before, .prev:before {
+    font-family: var(--pwa-icon-font);
+    content: "\61";
+    display: block;
+}
+
+.slideImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.notVisible .shop {
+    transform: translate3d(-200px, 0, 0);
+    opacity: 0;
+}
+
+.notVisible .pants {
+    transform: translate3d(200px, 0, 0);
+    opacity: 0;
+}
+
+.link {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.content {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+	display: flex;
+}
+
+/* Content Position */
+
+.topLeft {
+	align-items: start;
+	justify-content: left;
+}
+
+.topCenter {
+	align-items: start;
+	justify-content: center;
+}
+
+.topRight {
+	align-items: start;
+	justify-content: right;
+}
+
+.middleLeft {
+	align-items: start;
+	justify-content: left;
+}
+
+.middleCenter {
+	align-items: center;
+	justify-content: center;
+}
+
+.middleRight {
+	align-items: start;
+	justify-content: right;
+}
+
+.bottomleft {
+	align-items: flex-start;
+	justify-content: center;
+}
+
+
+.bottomCenter {
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.bottomRight {
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.placeholder {
+	background-image: var(--pwa-placeholder-bg);
+    -webkit-animation: var(--pwa-placeholder-animation);
+    animation: var(--pwa-placeholder-animation);
+}
+
+.imageContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    height: auto;
+    width: 100%;
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.backBtn {
+    width: 100%;
+    max-width: 79px;
+    height: 79px;
+    background:rgba(255, 255, 255, 0.5);;
+    border: none;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 992px) {
+    .backBtn {
+        max-width: 43px;
+        height: 43px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .backBtn {
+        max-width: 57px;
+        height: 57px;
+    }
+}
+
+.buttonFocus {
+    composes: backBtn;
+    outline: none;
+    background: #FFFFFF;
+    opacity: 0.8;
+}
+
+.leftIcon {
+    font-size: 15px;
+    display: block;
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 992px) {
+    .leftIcon {
+       font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .leftIcon {
+        font-size: 9px;
+    }
+}
+
+.rightIcon {
+    font-size: 15px;
+    transform: rotate(-90deg);
+    display: block;
+}
+
+@media screen and (max-width: 992px) {
+    .rightIcon {
+       font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rightIcon {
+        font-size: 9px;
+    }
+}

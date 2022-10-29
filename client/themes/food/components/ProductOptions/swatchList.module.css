@@ -1,0 +1,7 @@
+.root {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    margin: 0 0;
+    grid-row-gap: 17px;
+}

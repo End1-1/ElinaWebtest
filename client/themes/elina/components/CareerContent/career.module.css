@@ -1,0 +1,159 @@
+.root {
+    margin-top: 40px;
+}
+
+.empty {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container {
+    margin: 100px auto;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: rgb(24, 83, 146);
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.infoTitle {
+    margin-bottom: 15px;
+    color: rgb(191, 13, 13);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+.description {
+    margin-bottom: 5px;
+    color: rgb(34, 34, 34);
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    max-width: 500px;
+}
+
+.description {
+    margin-bottom: 5px;
+}
+
+.error {
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.validationError {
+    font-weight: bold;
+    font-size: 14px;
+    color: red;
+}
+
+.announcements {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.announcement {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 100%;
+}
+
+.imageField {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.imageField img {
+    width: 100%;
+    height: auto;
+}
+
+.announcementInfo {
+    text-align: start;
+    margin-right: 20px;
+}
+
+.applicantName {
+    color: rgb(60, 72, 137);
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.buttonField {
+    margin-top: 10px;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.checkBoxContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.checkBox {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.input {
+    composes: input from "../TextInput/textInput.module.css";
+    padding-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .info {
+        font-size: 0.8rem;
+    }
+
+    .infoTitle {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+}

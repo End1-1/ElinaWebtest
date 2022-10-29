@@ -1,0 +1,23 @@
+.root {
+    background: #f9f9f9;
+    padding: 9px;
+    border: 1px solid #dedede;
+}
+
+@media screen and (max-width: 360px) {
+    .root {
+        padding: 7px;    
+    }
+}
+
+
+.reviewCount {
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+
+@media screen and (max-width: 768px) {
+    .reviewCount {
+        font-size: 12px;
+    }
+}

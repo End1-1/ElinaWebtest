@@ -1,0 +1,18 @@
+.body {
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .body {
+        width: 1386px;
+        margin: 0 auto;
+        padding: 0 58px;
+    }
+}
+
+.successMessage {
+    color: green;
+    font-weight: bold;
+    margin: 30px; 
+}

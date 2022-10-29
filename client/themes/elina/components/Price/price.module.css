@@ -1,0 +1,63 @@
+.root {
+    display: flex;
+    color: #2B3944;
+    position: relative;
+}
+
+.newPrice {
+    display: flex;
+    align-items: center;
+}
+
+.newPrice .amount {
+    font-size: 18px;
+}
+
+.newPrice .symbol {
+    font-size: 12px;
+    margin-left: 7px;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.discounted {
+    display: flex;
+}
+
+.discountedNewPrice {
+    color: #D32626;
+    font-size: 18px;
+}
+
+.discountedSymbol {
+    color: #D32626;
+    margin-left: 7px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .discountedNewPrice {
+        font-size: 16px;
+    }
+}
+.discountedOldPrice {
+    margin-left: 8px;
+    text-decoration: line-through;
+    position: absolute;
+    top: -13px;
+    right: 30px;
+}
+
+.discountedOldPrice .discountedAmount {
+    font-size: 12px;
+    color: #2B3944;
+}
+
+.discountedOldPrice .discountedSymbol {
+    font-size: 10px;
+    color: #2B3944;
+    margin-left: 0;
+}

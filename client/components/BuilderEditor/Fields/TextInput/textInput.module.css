@@ -1,0 +1,71 @@
+.root {
+    display: grid;
+    grid-template-columns: 1fr 31px;
+    align-items: center;
+}
+
+.root.inFloatLabel {
+    position: relative;
+}
+
+.input {
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #d5d5d5;
+    color: #101010;
+    max-width: 370px;
+    padding: 3px;
+}
+
+.inFloatLabel .input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.inFloatLabel.input:-moz-placeholder {
+    color: transparent;
+}
+
+.inFloatLabel .input::-moz-placeholder {
+    color: transparent;
+}
+
+.inFloatLabel.input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.inFloatLabel .input::placeholder {
+    color: transparent;
+}
+
+.root input {
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid #D0CFCF;
+    outline: none;
+    padding-left: 10px;
+}
+
+.floatLabel  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 16px 16px 16px 20px;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+}
+
+.inFloatLabel .input:focus~label,
+.inFloatLabel .input:not(:placeholder-shown)~label {
+    font-size: 12px;
+    opacity: .65;
+    transform: scale(.85) translateY(-13px) translateX(-6px);
+}
+
+.inFloatLabel .input:focus,
+.inFloatLabel .input:not(:placeholder-shown) {
+    padding-top: 18px;
+}

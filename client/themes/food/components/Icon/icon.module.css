@@ -1,0 +1,84 @@
+.icon {
+  font-family: "foodIcons";
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+.icon-filter:before {
+  content: "\e90c";
+}
+
+.icon-sort:before {
+  content: "\e910";
+}
+
+.icon-search:before {
+  content: "\e90f";
+}
+
+.icon-rectangle:before {
+  content: "\e90e";
+}
+
+.icon-square:before {
+  content: "\e90a";
+}
+
+.icon-X:before {
+  content: "\e909";
+}
+
+.icon-pen:before {
+  content: "\e908";
+}
+
+.icon-trash:before {
+  content: "\e907";
+}
+
+.icon-vector:before {
+  content: "\e906";
+}
+
+.icon-check-mark:before {
+  content: "\e90b";
+}
+
+.icon-check-mark-2:before {
+  content: "\e911";
+}
+
+.icon-youtube:before {
+  content: "\e903";
+}
+
+.icon-twitter:before {
+  content: "\e902";
+}
+
+.icon-linkedin:before {
+  content: "\e905";
+}
+
+.icon-instagram:before {
+  content: "\e904";
+}
+
+.icon-facebook:before {
+  content: "\e901";
+}
+
+.icon-user:before {
+  content: "\e900";
+}
+
+.icon-menu:before {
+  content: "\e90d";
+}

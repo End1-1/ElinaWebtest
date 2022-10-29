@@ -1,0 +1,15 @@
+.root {
+    padding: 30px;
+}
+
+.root :global(.input-range__label-container) {
+    left: 0 !important;
+}
+
+.root :global(.input-range__track--active) {
+    background: #5C94BD !important;
+}
+
+.root :global(.input-range__track) {
+    background: #EFEFEF;
+}

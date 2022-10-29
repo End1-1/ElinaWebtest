@@ -1,0 +1,23 @@
+.root {
+  width: 100%;
+  max-width: 419px;
+}
+
+.headingContainer {
+  composes: deliveryHeader from "./checkoutContent.module.css";
+}
+
+.heading {
+  composes: deliveryHeading from "./checkoutContent.module.css";
+}
+
+.addresses {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.guestInfo {
+  padding: 0 20px;
+  padding-top: 28px;
+}

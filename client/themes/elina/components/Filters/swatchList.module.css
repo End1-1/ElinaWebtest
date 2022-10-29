@@ -1,0 +1,7 @@
+.root {
+    display: flex;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+

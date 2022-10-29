@@ -1,0 +1,17 @@
+.price {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #46544A;
+}
+
+.categoryListing {
+  font-weight: bold;
+  font-size: 100%;
+  text-align: left;
+  color: #ffffff;
+}
+
+.productPage {
+    font-size: 20px;
+}

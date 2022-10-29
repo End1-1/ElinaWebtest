@@ -1,0 +1,132 @@
+:global(.builder-icon) {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'shopianFrontendDefault' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+    content: "\e917";
+}
+
+.icon-eye:before {
+    content: "\e918";
+}
+
+.icon-element-social:before {
+    content: "\e914";
+    color: #e8e6e0;
+}
+
+.icon-element-html:before {
+    content: "\e915";
+    color: #e8e6e0;
+}
+
+.icon-element-testimonials:before {
+    content: "\e916";
+    color: #e8e6e0;
+}
+
+.icon-element-button:before {
+    content: "\e910";
+    color: #e8e6e0;
+}
+
+.icon-element-newsletter:before {
+    content: "\e911";
+    color: #e8e6e0;
+}
+
+.icon-element-blog:before {
+    content: "\e912";
+    color: #e8e6e0;
+}
+
+.icon-element-space:before {
+    content: "\e913";
+    color: #e8e6e0;
+}
+
+.icon-element-product-list:before {
+    content: "\e90a";
+    color: #e8e6e0;
+}
+
+.icon-element-banner:before {
+    content: "\e90b";
+    color: #e8e6e0;
+}
+
+.icon-element-image:before {
+    content: "\e90c";
+    color: #e8e6e0;
+}
+
+.icon-element-image-slider:before {
+    content: "\e90d";
+    color: #e8e6e0;
+}
+
+.icon-element-category-list:before {
+    content: "\e90e";
+    color: #e8e6e0;
+}
+
+.icon-element-product-slider:before {
+    content: "\e90f";
+    color: #e8e6e0;
+}
+
+.icon-move:before {
+    content: "\e905";
+    color: #ffe066;
+}
+
+.icon-submenu:before {
+    content: "\e906";
+    color: #ffe066;
+}
+
+.icon-text:before {
+    content: "\e907";
+    color: #e8e6e0;
+}
+
+.icon-section:before {
+    content: "\e908";
+    color: #e8e6e0;
+}
+
+.icon-layers:before {
+    content: "\e909";
+    color: #e8e6e0;
+}
+
+.icon-screen-mobile:before {
+    content: "\e900";
+}
+
+.icon-trash:before {
+    content: "\e901";
+    color: #ffe066;
+}
+
+.icon-pencil:before {
+    content: "\e902";
+}
+
+.icon-screen-desktop:before {
+    content: "\e903";
+}
+
+.icon-screen-tablet:before {
+    content: "\e904";
+}

@@ -1,0 +1,90 @@
+.rootPosition {
+    top: 0;
+    z-index: 100;
+}
+
+.root {
+    text-align: center;
+    color: #444;
+    width: 100%;
+    margin: 0 auto;
+    background: #f2f2f2;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    padding: 5px 0;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.mobileMiddleRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+@media screen and (max-width: 740px) {
+    .middle {
+        padding: 20px 0;
+    }
+}
+
+.bottom {
+    padding: 5px 0;
+}
+
+.logo {
+    margin: 105px 0 40px;
+}
+
+.logo img {
+    width: 185px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #afafaf;
+    margin: 0;
+}
+
+.navTrigger {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.navTrigger::before {
+    font-family: "mazdaIcons";
+    content: "\62";
+    font-size: 18px;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+}
+
+@media screen and (max-width: 460px) {
+    .searchRoot {
+        margin: unset;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    .searchFieldMobile {
+        display: none;
+    }
+}

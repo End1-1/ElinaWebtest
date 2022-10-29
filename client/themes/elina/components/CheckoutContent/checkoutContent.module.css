@@ -1,0 +1,316 @@
+.root {
+    text-align: center;
+}
+
+.logo {
+    margin: 105px 0 40px;
+}
+
+.logo img {
+    width: 185px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #afafaf;
+    margin: 0;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+
+.sidebar {
+    max-width: 370px;
+    padding-left: 65px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main {
+    text-align: left;
+    padding: 135px 64px;
+    display: flex;
+    max-width: 1310px;
+    margin: 0 auto;
+}
+
+.left {
+    border-right: 1px solid #C4C4C4;
+    padding-right: 49px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.steps {
+    display: flex;
+}
+
+.step {
+    padding: 5px;
+    border: 1px solid #eaeaea;
+    margin: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.step.active {
+    background: #5C94BD;
+    color: white;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9F1EB;
+    background: #00414B;
+    padding: 11px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 35px;
+}
+
+.line {
+    display: block;
+    margin: 0 16px;
+}
+
+.link {
+    color: #F9F1EB;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.currentStepLink {
+    color: #878787;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #2B3944;
+}
+
+.additionalInfo {
+    margin-top: 35px;
+}
+
+.infoTitle {
+    color: #878787;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    margin: 0 0 0 5px;
+}
+
+.textArea {
+    resize: none;
+    max-width: 885px;
+    min-height: 115px;
+}
+
+.bottomtext {
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #D32626;
+    margin-top: 19px;
+}
+
+.nextStepButton {
+    composes: button from '../Button/button.module.css';
+    max-width: 360px;
+    width: 100%;
+    height: 45px;
+    align-self: flex-end;
+    margin-top: 102px;
+}
+
+.placeOrderButton{
+    max-width: 360px;
+    width: 100%;
+    height: 45px;
+    align-self: flex-start;
+    margin-top: 102px;
+    cursor: pointer;
+}
+
+/*.left button:last-child {*/
+/*    max-width: 360px;*/
+/*    width: 100%;*/
+/*    height: 45px;*/
+/*    margin-top: 102px;*/
+/*}*/
+
+.list {
+    max-height: 539px;
+    margin-bottom: 19px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.list::-webkit-scrollbar {
+    width: 4px;
+    margin-right: 15px;
+}
+
+.removeIcon {
+    composes: removeIcon from '../Minicart/item.module.css';
+    right: 5px;
+    top: -5px;
+}
+
+.nameField {
+    composes: nameField from '../Minicart/item.module.css';
+    max-width: 120px;
+    min-height: unset;
+    margin-bottom: 10px;
+}
+
+.itemBody {
+    composes: body from '../Minicart/item.module.css';
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-column-gap: 21px;
+}
+
+.details {
+    composes: details from '../Minicart/item.module.css';
+    margin-left: unset;
+    max-width: 160px;
+}
+
+.hideBilling {
+    display: none;
+}
+
+.commentTitle {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #2B3944;
+    margin-bottom: 22px;
+    margin-top: 40px;
+}
+
+.commentTextArea {
+    resize: none;
+    max-width: 418px;
+    min-height: 115px;
+    border-radius: 3px;
+}
+
+.commentTextArea::placeholder {
+    font-size: 10px;
+    line-height: 11px;
+    color: #878787;
+    opacity: 0.5;
+}
+
+.modalContent {
+    composes: content from '../../components/Modal/modal.module.css';
+    max-width: 860px !important;
+}
+
+.closeIconField {
+    position: absolute;
+    right: 45px;
+    top: 44px;
+    cursor: pointer;
+}
+
+.closeIconField span{
+    font-size: 21px;
+}
+
+@media screen and (max-width: 1040px){
+    .main{
+        padding: 135px 20px;
+
+    }
+    .left {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .modalContent {
+        max-width: 800px !important;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .modalContent {
+        max-width: 600px !important;
+    }
+
+    .commentTextArea{
+        max-width: 100%;
+    }
+
+    .left{
+        border: 0;
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 815px) {
+    .main{
+        margin: 68px 20px;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .modalContent {
+        max-width: 500px !important;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .modalContent {
+        max-width: 450px !important;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .modalContent {
+        max-width: 350px !important;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .modalContent {
+        max-width: 300px !important;
+    }
+}
+.titleNotFound{
+    font-size: 22px;
+    margin-top: 100px;
+    text-transform: uppercase;
+    margin-bottom: 250px;
+}
+.navigation{
+    padding: 0 20px;
+
+}
+
+.errorMessage {
+    text-align: center;
+    margin: 15px auto;
+    color: red;
+}

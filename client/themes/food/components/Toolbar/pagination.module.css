@@ -1,0 +1,43 @@
+.root {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 23px;
+  padding: var(--container-padding);
+}
+
+.pagination {
+  display: inline-flex;
+  align-items: center;
+}
+
+.prev {
+  font-family: "foodIcons";
+  font-size: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: fit-content;
+  outline: none;
+  transform: rotate(90deg);
+}
+
+.next {
+  font-family: "foodIcons";
+  font-size: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: fit-content;
+  outline: none;
+  transform: rotate(-90deg);
+}
+
+.prev::before {
+  content: "\e906";
+  font-size: 6px;
+}
+
+.next::before {
+  content: "\e906";
+  font-size: 6px;
+}

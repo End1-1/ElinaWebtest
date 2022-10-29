@@ -1,0 +1,25 @@
+.root {
+    font-size: 18px;
+    line-height: 140%;
+    color: #1F1D2B;
+    background: #FFFFFF;
+    border: 1px solid #FFB800;
+    border-radius: 3px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 55px;
+}
+
+.increment {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.decrement {
+   composes: increment;
+}

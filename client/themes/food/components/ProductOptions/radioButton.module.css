@@ -1,0 +1,56 @@
+.root {
+    background: var(--venia-swatch-bg);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    height: auto;
+    width: auto;
+    min-width: auto;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.root span {
+    background-color: var(--venia-swatch-bg);
+    height: 16px;
+    min-width: 1rem;
+    padding: 0;
+    border-radius: 50%;
+    width: 16px;
+    --venia-swatch-bg: var(--venia-grey);
+    display: block;
+}
+
+.root_selected {
+    composes: root;
+}
+
+.root_focused {
+    composes: root;
+}
+
+.root_selected_focused {
+    composes: root_selected;
+}
+
+.label{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: #46544A;
+}
+
+.radioButton{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    cursor: pointer;
+}

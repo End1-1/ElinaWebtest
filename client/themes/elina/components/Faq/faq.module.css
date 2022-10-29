@@ -1,0 +1,252 @@
+.root {
+
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #2B3944;
+    font-size: 26px;
+    line-height: 18px;
+    margin-top: 36px;
+    margin-bottom: 63px;
+    text-transform: uppercase;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9F1EB;
+    background: #2B525A;
+    padding: 11px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.breadcrumbsLabel{
+    composes: label from '../Breadcrumbs/breadcrumbs.module.css';
+    font-size: 16px;
+    color: #878787;
+    text-transform: uppercase;
+}
+
+.crumb{
+    composes: crumb from '../Breadcrumbs/breadcrumbs.module.css';
+    display: flex;
+}
+
+.crumb a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.crumbLink {
+    composes: link from '../Breadcrumbs/breadcrumbs.module.css';
+    color: #F9F1EB !important;
+    font-size: 16px;
+}
+
+.crumb a:hover {
+    color: #FFFFFF !important;
+
+}
+
+.line {
+    display: block;
+    margin: 0 16px;
+    position: relative;
+}
+
+.bannerRoot {
+    composes: root from '../Banner/banner.module.css';
+}
+
+.content {
+    composes: content from '../Banner/banner.module.css';
+    display: none;
+}
+
+.content p {
+    font-size: 32px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.faqs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    max-width: 1313px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 370px;
+}
+
+@media screen and (max-width: 1360px){
+    .faqs {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .breadcrumbs{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .breadcrumbs{
+        margin-top: 0;
+    }
+}
+
+.breadcrumbsLabel {
+    align-items: center;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #878787;
+}
+
+.bannerField img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .bannerRoot {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .bannerField img {
+        width: unset;
+        position: relative;
+        left: 100%;
+        margin-left: -200%;
+    }
+
+}
+
+.breadcrumbsRoot {
+    display: flex;
+}
+
+
+.question{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 14px;
+    color: #2B3944;
+    margin: 16px 0;
+    max-width: 80%;
+}
+
+.accordion {
+
+}
+
+.accordionLine {
+
+}
+
+.answer{
+    font-weight: bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #2B3944;
+    margin: 15px 0;
+}
+
+
+
+.accordionLineTop{
+    width: 100%;
+    height: 2px;
+    border-top: 2px solid #2B3944
+}
+
+.accordionLineBottom{
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid #2B3944
+}
+
+.accordionContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconField{
+    max-width: 30px;
+    margin-right: 22px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.closeIcon{
+    width: 26px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:17px;
+    border-bottom: 1px solid #000000;
+}
+.openIcon{
+    width: 26px;
+    height: 1px;
+    left: 1px;
+    top:17px;
+    border-bottom: 1px solid #000000;
+    position: absolute;
+    transform: rotate(90deg);
+
+}
+
+@media screen and (max-width: 768px) {
+    .bannerRoot img{
+        max-height: 150px;
+    }
+
+    .faqs {
+        margin-bottom: 105px;
+        margin-bottom: 239px;
+        margin-top: 83px;
+    }
+
+    .bannerField{
+        position: relative;
+    }
+
+    .title{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        line-height: 35px;
+    }
+
+    .question{
+        font-size: 12px;
+    }
+
+    .answer {
+        font-size: 12px;
+    }
+
+    .content {
+        display: flex;
+    }
+
+}

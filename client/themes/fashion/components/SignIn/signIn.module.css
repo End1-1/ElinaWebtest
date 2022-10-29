@@ -1,0 +1,90 @@
+.root {
+    margin-bottom: 12px;
+}
+
+.phoneOrEmail {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.phoneOrEmail span {
+    color: #5C94BD;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.phoneOrEmail span:hover {
+    border-bottom: none;
+}
+
+.phoneOrEmail span:hover:after, .phoneOrEmail span.active:after {
+    transform: scaleX(1);
+    transform-origin: 0 50%;
+}
+
+.phoneOrEmail span:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid #5C94BD;
+    transform: scaleX(0);
+    transition: transform .25s ease-in-out;
+}
+
+.phoneOrEmail span.active {
+    font-weight: 400;
+}
+
+.phoneOrEmail span:first-child {
+    margin-right: 20px;
+}
+
+:global(.react-tel-input) :global(.special-label) {
+    text-align: left;
+    color: #c0c0c0;
+    font-size: 10px;
+}
+
+.fields .field {
+    margin-bottom: 20px;
+}
+
+.validationError {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+    color: #FF173E;
+}
+
+.submitBtn button {
+    width: 100%;
+    border-radius: 0;
+    font-weight: 400;
+    padding: 19px 18px;
+}
+
+.submitBtn button span {
+    float: right;
+}
+
+.actions {
+    text-align: left;
+}
+
+.actions button {
+    background: none !important;
+    color: #FF173E !important;
+    font-weight: 300 !important;
+    padding: 0;
+    font-size: 12px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.socialLogins {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+}

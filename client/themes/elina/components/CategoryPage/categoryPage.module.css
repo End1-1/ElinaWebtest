@@ -1,0 +1,372 @@
+.root {
+    margin-bottom: 64px;
+}
+
+.body {
+    width: 100%;
+}
+
+.productList {
+    margin-top: 50px;
+}
+
+.image {
+    position: relative;
+    opacity: 0.75;
+}
+
+.image img {
+    width: 100%;
+}
+.bannerImage{
+    width: 100%;
+}
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 32px;
+    grid-row-gap: 53px;
+}
+
+.listGift {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 32px;
+    max-width: 1300px;
+    margin: 0 auto;
+    grid-row-gap: 68px;
+}
+
+.giftCardImageWrapper {
+    max-width: 308px;
+}
+
+.emptyGiftCards {
+    padding: 80px 0;
+    font-size: 24px;
+    color: #2B525A;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .image {
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .image img {
+        width: unset;
+        position: relative;
+        left: 100%;
+        margin-left: -200%;
+    }
+}
+
+.footerTools {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 63px;
+}
+
+.filtersAndList {
+    max-width: 1310px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 142px;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #2B525A;
+    padding: 11px;
+    text-align: center;
+    margin-top: -4px;
+}
+
+.breadcrumbs a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+
+.line {
+    display: block;
+    color: #C4C4C4;
+    margin: 0 15px;
+}
+
+.categoryNameField {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoryNameField :global h1, .categoryNameField :global p {
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.categoryName {
+    font-size: 32px;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.breadcrumbsLabel {
+    font-size: 16px;
+    color: #878787;
+    text-transform: uppercase;
+}
+
+.itemCount {
+    font-size: 14px;
+    color: #000000;
+}
+
+.toolbarField {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 21px;
+}
+
+.allField {
+    max-width: 193px;
+    text-align: start;
+}
+
+.all {
+    font-size: 24px;
+    color: #2B3944;
+    text-transform: uppercase;
+}
+
+.banner {
+    margin-top: 94px;
+    max-width: 303px;
+    letter-spacing: 0.2em;
+}
+
+.itemRoot {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner :global .categoryBannerField {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 118px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.bannerOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    background: #2B3944;
+    opacity: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainField {
+    width: 100%;
+    margin-top:15px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .filtersAndList {
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .filtersAndList {
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+
+    .mainField {
+        max-width: 512px;
+        margin: 0 auto;
+    }
+
+    .listGift{
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .mainField {
+        max-width: 420px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .filtersAndList {
+        display: unset;
+    }
+
+    .image img {
+        max-height: 150px;
+    }
+
+    .breadcrumbs {
+        padding: 5px;
+    }
+
+    .filterContainer {
+        padding-right: 60px;
+    }
+
+    .productList {
+        padding: 0 5px;
+    }
+
+    .toolbarField {
+        margin-top: 14px;
+        margin-bottom: 28px;
+    }
+
+    .mainField {
+        max-width: 377px;
+        margin: 0 auto;
+    }
+
+    .list {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 26px;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .listGift {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .filtersAndList {
+        display: unset;
+    }
+
+    .toolbarField {
+        margin-top: 39px;
+        grid-template-columns: 100px 185px;
+    }
+
+    .mainField {
+        max-width: 285px;
+        margin: 0 auto;
+    }
+
+    .list {
+        grid-template-columns: 150px 150px;
+        grid-column-gap: 8px;
+        justify-content: center;
+    }
+}
+
+.info {
+    margin-bottom: 16px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sale {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: #D32626;
+    text-align: center;
+}
+
+.leftLine {
+    width: 114px;
+    height: 1px;
+    background: #2B3944;
+}
+
+.rightLine {
+    composes: leftLine;
+}
+
+.filter {
+    height: 36px;
+    padding: 0 9px;
+    margin-right: 10px;
+    border: 1px solid #2B3944;
+    box-sizing: border-box;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #2B3944;
+}
+
+
+.filterOpen:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999988;
+    cursor: initial;
+}
+
+.filterIcon {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.giftCartRoot {
+    margin-bottom: 100px;
+
+}

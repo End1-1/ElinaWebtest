@@ -1,0 +1,29 @@
+.root {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #46544A;
+    margin-bottom: 12px;
+}
+
+.selection {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.selectionLabel {
+    margin-right: 1rem;
+}
+
+.root select {
+    border: 1px solid  #DBDBDB;
+    background: none;
+}

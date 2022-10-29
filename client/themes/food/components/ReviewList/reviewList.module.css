@@ -1,0 +1,83 @@
+.root {
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1F1D2B;
+}
+
+.message {
+    margin-top: 10px;
+}
+
+
+.existingCouponCode {
+    margin: 20px 0;
+}
+
+.validationError {
+    color: #910a2d;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.review {
+    background: white;
+    margin-bottom: 44px;
+}
+
+.summary {
+    font-weight: bold;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #1F1D2B;
+    margin-bottom: 4px;
+}
+
+.date {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #A0A4A8;
+}
+
+.starRating {
+    margin: 10px 0;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #1F1D2B;
+}
+
+@media screen and (max-width: 768px){
+    .root{
+        max-width: 500px;
+        margin: 44px auto;
+    }
+    .review {
+        background: white;
+        margin-bottom: 30px;
+    }
+}

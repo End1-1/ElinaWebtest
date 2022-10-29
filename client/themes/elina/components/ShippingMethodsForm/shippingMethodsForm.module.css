@@ -1,0 +1,112 @@
+.root {
+    display: block;
+    margin-top: 44px;
+}
+
+.title {
+    color: #2B3944;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin-bottom: 29px;
+    margin: 0 0 35px;
+}
+
+
+.rate {
+    margin-top: 0;
+    width: 100%;
+    max-width: 100% !important;
+    column-gap: 0;
+    display: table-row;
+}
+
+.row {
+    border-left: 1px solid #C4C4C4;
+    border-right: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+
+.rateRow {
+    border-bottom:1px solid #C4C4C4;
+    margin: 0 5px;
+    padding: 0 5px;
+
+}
+.table{
+    border-spacing: 0;
+    width: 100%
+}
+
+.rowDescription{
+    composes: rateRow;
+}
+.rate :global(td) {
+    justify-self: unset;
+}
+
+
+
+.carrierName {
+    font-weight: bold;
+}
+
+.isSubmitting::before {
+    color: #ff4d40;
+}
+
+.radio {
+    composes: radio from '../Radio/radio.module.css';
+    margin-bottom: 0;
+}
+
+.radioLabel {
+    letter-spacing: 0.2px;
+    color: #2B3944;
+    margin-left: 34px;
+    font-size: 14px;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+
+.radioWrapper {
+    composes: checkmarkWrapper from '../Radio/radio.module.css';
+    top: 4px;
+}
+
+.priceBox {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #2B3944;
+}
+
+.asterisk {
+    color: #D32626;
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #2B3944;
+    max-width: 217px;
+    width: 100%;
+}
+
+.border {
+    position: absolute;
+    left: 120px;
+    height: 100%;
+    top: 0;
+    width: 1px;
+    background: #C4C4C4;
+}
+
+.rightBorder {
+    composes: border;
+    left: 260px;
+}

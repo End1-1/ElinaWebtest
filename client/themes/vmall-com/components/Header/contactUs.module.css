@@ -1,0 +1,36 @@
+.phoneDesktop {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .phoneDesktop {
+        display: none;
+    }
+
+}
+
+.phoneDesktop .number {
+    margin-left: 10px;
+}
+
+.phoneMobile {
+    margin-right: 10px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .phoneMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .phoneMobile {
+        padding: 4px;
+    }
+}
+
+.phoneMobile .number {
+    margin-left: 10px;
+}

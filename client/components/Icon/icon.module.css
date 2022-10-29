@@ -1,0 +1,17 @@
+.icon::before {
+    font-family: 'icons';
+    text-transform: none;
+}
+
+.icon-align-justify:before {
+    content: "\61";
+}
+.icon-bag:before {
+    content: "\62";
+}
+.icon-times:before {
+    content: "\63";
+}
+.icon-search:before {
+    content: "\64";
+}

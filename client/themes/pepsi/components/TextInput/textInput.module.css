@@ -1,0 +1,69 @@
+.root.inFloatLabel {
+    position: relative;
+}
+
+.input {
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #d5d5d5;
+    color: var(--primary-text-color);
+    max-width: 370px;
+    padding: 12px;
+}
+
+.inFloatLabel .input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.inFloatLabel.input:-moz-placeholder {
+    color: transparent;
+}
+
+.inFloatLabel .input::-moz-placeholder {
+    color: transparent;
+}
+
+.inFloatLabel.input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.inFloatLabel .input::placeholder {
+    color: transparent;
+}
+
+.root input {
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid var(--very-light-grey);
+    outline: none;
+    padding-left: 20px;
+}
+
+.floatLabel  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 13px 13px 13px 15px;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    font-family: 'Roboto Condensed';
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+}
+
+.inFloatLabel .input:focus~label,
+.inFloatLabel .input:not(:placeholder-shown)~label {
+    font-size: 12px;
+    transform: scale(.85) translateY(-36px) translateX(-15px);
+}
+
+.inFloatLabel .input:focus,
+.inFloatLabel .input:not(:placeholder-shown) {
+    padding-top: 18px;
+}

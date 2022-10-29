@@ -1,0 +1,20 @@
+.root {
+    display: grid;
+}
+
+@media(min-width: 993px) {
+    .root {
+        grid-template-columns: repeat(4, 1fr);
+        background: #F4F9FC;
+        padding: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media(max-width: 992px) {
+    .root {
+        grid-template-columns: 1fr;
+        grid-row-gap: 9px;
+    }
+}

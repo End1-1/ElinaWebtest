@@ -1,0 +1,51 @@
+.root {
+    padding: 10px;
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.methods table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.methods table thead {
+    background: #EFEFEF;
+}
+
+.methods table thead th {
+    padding: 5px 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.methods table tbody td {
+    padding: 5px 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.method {
+    border: 1px dashed var(--dark-color);
+    padding: 10px 5px;
+    align-items: center;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.checkbox {
+    border: 1px solid #e6e6e6;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.checkbox.selected {
+    background: #eaeaea;
+}
+
+.isSubmitting::before {
+    color: #ff4d40;
+}

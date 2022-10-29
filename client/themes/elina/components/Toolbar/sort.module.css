@@ -1,0 +1,65 @@
+.root {
+    width: 210px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+}
+
+@media screen and  (max-width: 380px) {
+    .root {
+        white-space: nowrap;
+    }
+}
+
+.dir {
+    cursor: pointer;
+}
+
+.sortField {
+    background: #fff;
+    padding: 15px;
+    position: absolute;
+    z-index: 100;
+    top: 37px;
+    width: 181px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.sortItem {
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    color: #2B3944;
+    margin-right: 51px;
+    padding-right: -1px;
+    padding: 6px 0;
+}
+
+.header {
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 37px;
+    border: 1px solid #2B3944;
+    box-sizing: border-box;
+    color: #2B3944;
+    justify-content: center;
+}
+
+.sortIcon {
+    margin-left: 9px;
+}
+
+.title {
+   white-space: nowrap;
+}
+
+.sortItem:hover {
+    background: #2B525A;
+    color: #fff;
+}

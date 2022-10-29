@@ -1,0 +1,52 @@
+.root {
+    text-align: left;
+}
+
+.root input {
+    border: 1px solid #DDDDDD !important;
+    padding: 0 !important;
+    padding-left: 15px !important;
+    height: 40px !important;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-right: none !important;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8E8D8D;
+    margin-bottom: 26px;
+}
+
+.content {
+    display: flex;
+}
+
+.field {
+    flex: 1;
+    text-align: left;
+}
+
+.content button {
+    background: none !important;
+    border: 1px solid #5C94BD;
+    padding: 0;
+    width: 64px;
+    max-height: 40px;
+}
+
+.content button span {
+    color: #5C94BD;
+
+}
+
+.validationError {
+    color: #910a2d;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+
+

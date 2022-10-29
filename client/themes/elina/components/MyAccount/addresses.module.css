@@ -1,0 +1,157 @@
+.root {
+    display: flex;
+    padding: 37px 0 168px 62px;
+}
+
+.content {
+    padding: 61px 10px 93px 57px;
+    width: 100%;
+}
+.addressesCardRoot{
+    composes: root from '../AddressCard/addressCard.module.css';
+}
+.title {
+    margin-bottom: 48px;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #2B3944;
+
+}
+
+.field {
+    margin: 10px 0;
+}
+
+.addresses {
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px
+}
+
+.addAddress {
+    max-width: 254px;
+    width: 100%;
+    font-size: 14px;
+    background: #FFFFFF;
+    border: 1px solid #2B525A;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #878787;
+    letter-spacing: 0.2px;
+    padding: 72px 96px 88px 96px;
+    position: relative;
+    min-height: 222px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    left: 15px;
+}
+
+.action {
+    letter-spacing: 0.2px;
+    color: #2B3944;
+    font-size: 12px;
+    line-height: 32px;
+    opacity: 0.5;
+    text-decoration: underline;
+    text-transform: lowercase;
+    cursor: pointer;
+    margin: 0;
+}
+
+.addButton {
+    composes: button from '../../components/Button/button.module.css';
+    background: #2B525A;
+    border-radius: 50%;
+    width: unset;
+    height: unset;
+    min-height: unset;
+    min-width: unset;
+    padding: 30px;
+    font-weight: normal;
+    line-height: 32px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.addButton span {
+    font-size: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.addAddressLabel {
+    composes: action;
+    color: #878787;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modalContent {
+    composes: content from '../../components/Modal/modal.module.css';
+    max-width: 580px !important;
+}
+
+@media screen and (max-width: 1230px){
+.addresses{
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 900px) {
+    .root{
+        padding: 20px;
+
+    }
+    .addresses{
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content{
+        padding: 0;
+        margin-top: 0;
+    }
+    .title{
+        margin-left: auto;
+        margin-right: auto;
+        max-width:600px;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .root{
+        padding: 20px;
+    }
+    .addresses{
+      grid-template-columns: 1fr;
+    }
+    .addressesCardRoot{
+        max-width: 100%;
+    }
+    .addAddress{
+        max-width: 100%;
+    }
+
+}

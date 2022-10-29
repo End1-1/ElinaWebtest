@@ -1,0 +1,57 @@
+.root {
+    padding: 30px;
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
+}
+
+.field {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUp {
+    margin-top: 13px;
+}
+
+.phoneFieldContainer {
+    max-width: 250px;
+}
+
+.phoneFieldInput {
+    width: 200px !important;
+    padding-left: 25px !important;
+}
+
+.validationError {
+    color: var(--dark-color);
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+.phoneOrEmail {
+    margin: 20px 0;
+}
+
+.phoneOrEmail span {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.phoneOrEmail span.active {
+    border: 1px solid grey;
+}
+
+.socialLogins {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,57 @@
+.root {
+    color: #444;
+    padding: 10px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.productImage {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.name {
+    color: #910a2d;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .name {
+        font-size: 12px;
+    }
+}
+
+.productImageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.optionsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .buttonLabel {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .buttonLabel {
+        font-size: 10px;
+    }
+}

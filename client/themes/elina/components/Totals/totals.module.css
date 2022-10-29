@@ -1,0 +1,24 @@
+.root {
+    display: block;
+    border-top: 1px solid #C4C4C4;
+}
+
+.total {
+    text-align: right;
+    margin: 18px 0px;
+    display: flex;
+    justify-content: space-between
+}
+
+.shippingTotal {
+    composes: total;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.grandTotal {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    color: #2B3944;
+}

@@ -1,0 +1,22 @@
+.root {
+    padding: 10px;
+    display: block;
+    border-right: 1px solid #e6e6e6;
+}
+
+.root ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.root ul li .link {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 3px;
+}
+
+.root ul li .link.active {
+    background: var(--dark-color);
+    color: orange;
+}

@@ -1,0 +1,11 @@
+.form label {
+    margin-bottom: 5px;
+    display: block;
+    color: #383737;
+}
+
+.validationError {
+    color: red;
+    font-size: 10px;
+    margin-top: 3px;
+}

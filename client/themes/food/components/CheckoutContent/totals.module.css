@@ -1,0 +1,63 @@
+.root {
+  width: 100%;
+  font-size: 16px;
+  color: #1f1d2b;
+  font-style: normal;
+  font-weight: 400;
+  border-collapse: collapse;
+}
+
+.root thead th {
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.root thead th:first-child {
+  text-align: start;
+  padding-left: 20px;
+}
+
+.root thead th:last-child {
+  text-align: end;
+  padding-right: 20px;
+}
+
+.root tbody tr {
+  border-bottom: 1px solid #ebebed;
+}
+
+.root tbody tr:last-child {
+  border-bottom: unset;
+}
+
+.root tbody tr td {
+  line-height: 29px;
+}
+
+.root tbody tr td:first-child {
+  text-align: start;
+  padding-left: 20px;
+}
+
+.root tbody tr td:last-child {
+  text-align: end;
+  padding-right: 20px;
+}
+
+.productName {
+  font-weight: 500;
+}
+
+.priceData {
+  white-space: nowrap;
+}
+
+.grandTotalName {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffb800;
+}
+
+.grandTotalprice {
+  font-weight: 900;
+}

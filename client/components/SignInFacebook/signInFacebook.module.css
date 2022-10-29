@@ -1,0 +1,25 @@
+.root {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.fbButton {
+    background: #4267B2;
+    padding: 11px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px;
+}
+
+.fbIcon {
+    position: absolute;
+    top: 13px;
+    color: #FFFFFF;
+    font-size: 37px;
+    font-weight: bold;
+    font-family: system-ui;
+    left: 104px;
+}

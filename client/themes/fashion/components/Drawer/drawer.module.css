@@ -1,0 +1,17 @@
+.root {
+    background: white;
+    transition: left .3s;
+    height: 100%;
+    left: calc(-1 * (100% - 54px));
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 54px);
+}
+
+.root.open {
+    left: 0;
+    z-index: 99;
+}
+
+

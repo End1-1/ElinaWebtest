@@ -1,0 +1,17 @@
+.root {
+    margin-left: 20px;
+}
+
+.logo {
+    height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .root {
+        padding: 24px 0 0 57px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+}

@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: var(--container-padding);
+}
+
+@media (max-width: 768px) {
+  .root {
+    padding: var(--container-mobile-padding);
+  }
+}

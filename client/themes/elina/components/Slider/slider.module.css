@@ -1,0 +1,382 @@
+.slide {
+    position: relative;
+    background-color: var(--content-background-color);
+    overflow: hidden;
+    justify-content: center;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.prev {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.next {
+    right: 0;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.prev, .next {
+    position: absolute;
+    top: calc(50% - 39px);
+    display: block;
+    height: 79px;
+    width: 79px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.next:before, .prev:before {
+    font-family: var(--pwa-icon-font);
+    content: "\61";
+    display: block;
+}
+
+.slideImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.notVisible .shop {
+    transform: translate3d(-200px, 0, 0);
+    opacity: 0;
+}
+
+.notVisible .pants {
+    transform: translate3d(200px, 0, 0);
+    opacity: 0;
+}
+
+.link {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.content {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+	display: flex;
+}
+
+/* Content Position */
+
+.topLeft {
+	align-items: start;
+	justify-content: left;
+}
+
+.topCenter {
+	align-items: start;
+	justify-content: center;
+}
+
+.topRight {
+	align-items: start;
+	justify-content: right;
+}
+
+.middleLeft {
+	align-items: center;
+	justify-content: left;
+}
+
+.middleCenter {
+	align-items: center;
+	justify-content: center;
+}
+
+.middleRight {
+	align-items: start;
+	justify-content: right;
+}
+
+.bottomleft {
+	align-items: flex-start;
+	justify-content: center;
+}
+
+
+.bottomCenter {
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.bottomRight {
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.placeholder {
+	background-image: var(--pwa-placeholder-bg);
+    -webkit-animation: var(--pwa-placeholder-animation);
+    animation: var(--pwa-placeholder-animation);
+}
+
+.imageContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    height: auto;
+    width: 100%;
+}
+
+.doteLine {
+    /* width: 23px;
+    border: 0.5px solid black; */
+}
+
+.dotWrapper {
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.dots {
+    width: 100%;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.dotsOtherPage {
+    composes: dots;
+    bottom: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .dots {
+        height: 20px;
+    }
+}
+
+.dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    margin: 8px;
+}
+
+.dot:focus {
+    outline: none;
+    border: none;
+}
+
+.dot[class*="carousel__dot--selected"] .dotStyleWrapper::before {
+    background: #2B3944;
+}
+
+.dotStyleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+}
+
+.dotStyleWrapper::before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #a2a3a2;
+}
+
+.dotWrapper button:disabled .dotStyleWrapper{
+    border: 0.5px solid black
+}
+
+.dotWrapper button:disabled .dotStyleWrapper::before{
+    background-color: black;
+}
+
+
+.dotWrapper:last-child  .dot:last-child span {
+    display: none;
+}
+
+.content :global .homeSliderContent {
+    margin-left: 113px;
+    text-align: start;
+    max-width: 740px;
+}
+
+.content :global .homeSliderContentTitle {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 51px;
+    line-height: 55px;
+    letter-spacing: 0.1em;
+}
+
+.content :global .homeSliderContentText {
+    font-size: 16px;
+    color: #fff;
+}
+
+.content :global .homeSliderContentButton {
+    width: 185px;
+    height: 47px;
+    margin-top: 51px;
+    background: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    line-height: 47px;
+    cursor: pointer;
+}
+
+.content :global .homeSliderContentButtonText {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1350px) {
+    .content :global .homeSliderContentTitle {
+        font-size: 46px;
+    }
+
+}
+
+@media screen and (max-width: 1275px) {
+    .content :global .homeSliderContent {
+        max-width: 680px;
+    }
+
+}
+
+@media screen and (max-width: 1160px) {
+    .content :global .homeSliderContentTitle {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .content :global .homeSliderContent {
+        max-width: 595px;
+        margin-left: 90px;
+    }
+
+    .content :global .homeSliderContentTitle {
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .content :global .homeSliderContent {
+        max-width: 400px;
+    }
+
+    .content :global .homeSliderContentTitle {
+        font-size: 20px;
+        margin-bottom: 40px;
+        line-height: 24px;
+    }
+
+    .content :global .homeSliderContentText {
+        font-size: 14px;
+    }
+
+    .content :global .homeSliderContentButtonText {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    .content :global .homeSliderContent {
+        max-width: 220px;
+        margin-left: 19px;
+    }
+
+    .content :global .homeSliderContentTitle {
+        font-size: 14px;
+        margin-bottom: 12px;
+        line-height: 16px;
+    }
+
+    .content :global .homeSliderContentText {
+        font-size: 8px;
+    }
+
+    .content :global .homeSliderContentButtonText {
+        font-size: 10px;
+    }
+
+    .content :global .homeSliderContentButton {
+        margin-top: 40px;
+        max-width: 107px;
+        height: 26px;
+        line-height: 21px;
+    }
+
+    .dotStyleWrapper::before {
+        width: 5px;
+        height: 5px;
+    }
+
+    .dot {
+        margin: 1.5px;
+    }
+
+    .dots {
+        bottom: 10%;
+    }
+
+    .dotsOtherPage {
+        bottom: 3% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content :global .homeSliderContentButton {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .content :global .homeSliderContentTitle {
+        font-size: 12px;
+    }
+
+    .content :global .homeSliderContentText {
+        font-size: 7px;
+    }
+}

@@ -1,0 +1,84 @@
+.root {
+    margin-bottom: 17px;
+}
+
+.inCheckoutRoot {
+    margin-bottom: 0;
+}
+
+.checkBox_label {
+    position: relative;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.checkBox_label > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkBox_label > span {
+    letter-spacing: 0.2px;
+    color: #2B3944;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.checkboxCircle {
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #2B3944;
+    cursor: pointer;
+}
+
+.checkboxCircle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.checkBox_label > input:checked  + .checkboxCircle{
+    border-color: #2B3944;
+}
+
+.checkBox_label > input:checked  + .checkboxCircle span{
+    background-color: #2B3944;
+}
+
+.labelForCheckout {
+    composes: checkBox_label;
+    padding-left: 35px;
+}
+
+.checkboxCircleForCheckout {
+    composes: checkboxCircle;
+    border-radius: 0px;
+    border: 1px solid #00414B;
+    width: 19px;
+    height: 19px;
+}
+
+.checkboxCircleForCheckout span {
+   display: none;
+}
+
+.checkBox_label > input:checked  + .checkboxCircleForCheckout span{
+    background-color: #FFFFFF;
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    font-size: 15px;
+    width: 11px;
+    height: 7px;
+}

@@ -1,0 +1,88 @@
+.root {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.root h4 {
+    margin-bottom: 0;
+}
+
+.heading:before {
+    content: '4';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #5C94BD;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    color: white;
+    margin-right: 20px;
+}
+
+.methods table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.methods table thead {
+    background: #EFEFEF;
+}
+
+.methods table thead th {
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.methods table tbody td {
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.method {
+    border: 1px dashed var(--dark-color);
+    padding: 10px 5px;
+    align-items: center;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.checkbox {
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.checkbox.selected {
+    background: #5C94BD;
+    border-radius: 50%;
+    position: relative;
+    border-color: transparent;
+}
+
+.checkbox.selected:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: white;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.methods {
+    margin-left: 60px;
+}
+
+.isSubmitting::before {
+    color: #ff4d40;
+}

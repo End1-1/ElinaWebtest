@@ -1,0 +1,47 @@
+.root {
+    background: var(--venia-swatch-bg);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    height: auto;
+    width: auto;
+    min-width: auto;
+    padding: 2px;
+    border-radius: 50%;
+    margin-top: 0;
+    margin: 0 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .root {
+        margin: 0 5px;
+    }
+}
+
+.root:first-child {
+    margin-left: 0;
+}
+
+.root span {
+    background-color: var(--venia-swatch-bg);
+    height: 16px;
+    min-width: 1rem;
+    padding: 0;
+    border-radius: 50%;
+    width: 16px;
+    --venia-swatch-bg: var(--venia-grey);
+    display: block;
+}
+
+.root_selected {
+    composes: root;
+    border: 1px solid #34c0cb;
+}
+
+.root_focused {
+    composes: root;
+}
+.root_selected_focused {
+    composes: root_selected;
+}

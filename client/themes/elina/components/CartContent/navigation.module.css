@@ -1,0 +1,56 @@
+.navigation {
+    margin-top: 35px;
+}
+
+.navFlex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 415px;
+    margin: 0 auto;
+}
+
+.navCircle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    cursor: pointer;
+}
+
+.navLine {
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+}
+
+.textFlex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.navText {
+    color: #2B3944;
+    text-align: center;
+    width: 100%;
+}
+
+.navSpace {
+    width: 100%;
+    height: 2px;
+    background: transparent;
+}
+
+.active {
+    background: #2B525A;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation{
+        padding: 20px;
+    }
+}

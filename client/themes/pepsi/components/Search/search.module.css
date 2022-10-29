@@ -1,0 +1,9 @@
+.root {
+    margin-right: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .root {
+        margin-right: 18px;
+    }
+}

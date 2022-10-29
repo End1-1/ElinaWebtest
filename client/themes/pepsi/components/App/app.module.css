@@ -1,0 +1,82 @@
+body {
+    background: var(--primary-background-color);
+    font-family: "Roboto Condensed";
+    margin: 0 auto;
+}
+
+:root {
+    --primary-text-color: #000000;
+    --primary-background-color: #FFFFFF;
+    --primary-blue-color: #0177DB;
+    --text-red-color: #FF173E;
+    --container-width: 1240px;
+    --text-font-size: 14px;
+    --primary-font-size: 16px;
+    --text-tablet-size: 12px;
+    --font-color: #4D4D4D;
+    --icon-arrow: "\6b";
+    --icon-user: "\72";
+    --icon-cart: "\62";
+    --icon-money: "\66";
+    --icon-star-2: "\68";
+    --icon-star-1: "\6d";
+    --icon-shipping: "\6a";
+    --icon-support: "\6e";
+    --icon-search: "\73";
+    --icon-menu: "\6c";
+    --icon-add: "\61";
+    --icon-close: "\63";
+    --icon-remove: "\6f";
+    --icon-envelope: "\65";
+    --icon-home: "\67";
+    --icon-ig: "\69";
+    --icon-fb: "\70";
+    --icon-twt: "\71";
+    --icon-phone: "\74";
+    --icon-lock: "\64";
+}
+
+.pepsiThemeIcons {
+    font-family: 'pepsiIcons' !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+    src: url(../../fonts/robotoCondensed/roboto-condensed-v19-latin-300.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Regular';
+    font-weight: 400;
+    src: url(../../fonts/robotoCondensed/roboto-condensed-v19-latin-regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Bold';
+    font-weight: 700;
+    src: url(../../fonts/robotoCondensed/roboto-condensed-v19-latin-700.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Italic';
+    font-weight: 400;
+    src: url(../../fonts/robotoCondensed/roboto-condensed-v19-latin-italic.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: "pepsiIcons";
+    src:url("../../fonts/icons/pepsi.eot");
+    src:url("../../fonts/icons/pepsi.svg") format("svg"),
+      url("../../fonts/icons/pepsi.ttf") format("ttf"),
+      url("../../fonts/icons/pepsi.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

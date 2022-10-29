@@ -1,0 +1,141 @@
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.right .reviewBlock > div {
+    display: inline-block;
+}
+
+.right .reviewBlock > span {
+    margin-left: 10px;
+    color: #AFAFAF;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.right h1 {
+    font-size: 24px;
+    color: #000000;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.right h1:after {
+    content: '';
+    width: 18px;
+    display: block;
+    border: 1px solid #5C94BD;
+    margin-top: 20px;
+}
+
+.right .stockStatus {
+    margin-bottom: 10px;
+}
+
+.right .shortDescription {
+    margin-top: 35px;
+    color: #717171;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.right .sku {
+    margin: 25px 0;
+    color: #AFAFAF;
+    font-size: 12px;
+}
+
+.right .optionsBlock > div {
+    display: block;
+}
+
+.right .optionsBlock {
+
+}
+
+.right .optionsBlock {
+    margin-bottom: 35px;
+}
+
+.right .cartActions {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.right .cartActions button {
+    padding: 12px 18px;
+    width: 100%;
+    max-width: 160px;
+    margin-left: 10px;
+}
+
+
+.shareBlock > span {
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.shareBlock > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tabs .titles {
+    background: #F8F8F8;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.tabs .titles span {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+}
+
+.tabs .titles span.active {
+    color: #5C94BD;
+}
+
+.reviewFormAndList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+}
+
+.relatedProducts > h4 {
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+@media(min-width: 769px) {
+    .tabs {
+        margin: 100px 0 250px 0;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .tabs {
+        margin: 40px 0;
+    }
+    .top, .reviewFormAndList {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    .right {
+        margin-top: 30px;
+    }
+}

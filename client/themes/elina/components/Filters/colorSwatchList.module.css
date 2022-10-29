@@ -1,0 +1,29 @@
+.root {
+    display: flex;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.more {
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C4C4C4;
+    color: #FFFFFF;
+    width: 23px;
+    height: 23px;
+    padding-top: 2px;
+    padding-left: 1px;
+    margin-right: 9px;
+    margin-bottom: 9px;
+    border: 1px solid #EBEBEB;
+}
+
+.showMore {
+    padding-top: unset;
+}

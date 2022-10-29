@@ -1,0 +1,146 @@
+.root {
+    max-width: 1314px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 118px;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3.9fr 1fr;
+    column-gap: 26px;
+}
+
+.products {
+    width: 100%;
+
+}
+
+.actions {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.orders {
+    width: 100%;
+    max-width: 270px;
+    position: relative;
+}
+
+.clearCartButton {
+    composes: button from '../Button/button.module.css';
+    min-width: unset;
+    width: 100%;
+    background: #FFB800;
+    margin-bottom: 13px;
+    padding: 11px 0;
+}
+
+.checkoutButton {
+    composes: clearCartButton;
+    background: #FFFFFF;
+    border: 1px solid #FFB800;
+    margin: 0 !important;
+}
+
+
+@media screen and (max-width: 1420px) {
+    .root {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1000px ) {
+    .content {
+        column-gap: 12px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .content {
+        grid-template-columns:1fr;
+    }
+
+    .orders {
+        margin: 0 auto;
+    }
+
+    .actions {
+        position: unset;
+    }
+
+}
+
+.line {
+    margin-top: 34px;
+    margin-bottom: 39px;
+    width: 90%;
+    margin-left: auto;
+    border-bottom: 1px solid #1F1D2B;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px){
+    .root{
+        margin-bottom: 58px;
+        padding: 0 0;
+    }
+    .breadcrumbs{
+        margin-top: 0;
+        margin-bottom: 51px;
+    }
+}
+
+.cart {
+    border-bottom: 1px solid #1F1D2B;
+    width: 90%;
+    margin:0 auto;
+    padding-bottom: 14px;
+}
+.cartIconContainer{
+    display: flex;
+    align-items: center;
+}
+.cartIcon{
+
+}
+.cartText{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFB800;
+    margin-left: 19px;
+}
+
+.cartEmpty{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #1F1D2B;
+    margin-bottom: 100px;
+}
+
+.empty{
+    margin-top: 65px;
+    margin-bottom: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.continueShopping{
+    composes: button from '../Button/button.module.css';
+    min-width: unset;
+    max-width: 250px;
+    width: 100%;
+    white-space: nowrap;
+    padding: 8px 24px;
+}

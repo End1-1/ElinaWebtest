@@ -1,0 +1,11 @@
+.button {
+    cursor: pointer;
+}
+
+.button.move {
+    cursor: move;
+}
+
+.icon::before {
+    color: #FFE066
+}

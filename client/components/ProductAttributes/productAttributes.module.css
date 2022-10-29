@@ -1,0 +1,17 @@
+.root table {
+    min-width: 60%;
+}
+
+.root h3 {
+    color: var(--dark-color);
+}
+
+.attribute {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.root table td, .root table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}

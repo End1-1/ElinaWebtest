@@ -1,0 +1,245 @@
+.root {
+    display: flex;
+    padding: 37px 0 168px 62px;
+}
+
+.field {
+    margin: 10px 0;
+}
+
+.tabs {
+    composes: root from './tabs.module.css';
+}
+
+
+.content {
+    padding: 61px 37px;
+    width: 100%;
+    max-width: 891px;
+}
+
+.title {
+    text-align: start;
+    margin-left: 63px;
+
+}
+
+.table {
+    color: #000000;;
+    display: table;
+    margin: 0 0 1em 0;
+    width: 100%;
+    position: relative;
+}
+
+.table .row, .table .row {
+    display: table-row;
+}
+
+.row {
+    height: 42px;
+    border: 1px solid #C4C4C4;
+    line-height: 40px;
+
+}
+
+.header {
+    border: 1px solid #eaf3f4;
+    background: #eaf3f4;
+}
+
+
+.table .row:nth-of-type(odd), .table .row:nth-of-type(odd) {
+
+}
+
+.table .row.header, .table .row.header {
+    color: #000000;;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.table .headerTitle, .table .cell {
+    display: table-cell;
+    /*padding: 0 29px;*/
+}
+
+
+
+.table {
+    color: #000000;;
+    display: table;
+    margin: 0 0 1em 0;
+    padding: 0 43px;
+    position: relative;
+}
+
+.tableField {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.link {
+    color: #878787;
+    cursor: pointer;
+    font-size: 10px;
+    text-decoration: underline;
+    position: absolute;
+    right: 60px;
+}
+
+.linkField {
+    height: 40px
+}
+
+.cell {
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+
+}
+
+.headerTitle {
+    border-top: 1px solid #eaf3f4;
+    border-bottom: 1px solid #eaf3f4;
+}
+
+
+
+
+.theadOrders {
+    display: flex;
+    flex-direction: column;
+    background: #eaf3f4;
+    padding: 14px;
+}
+.tbodyOrders {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E6E6E6;
+    padding: 14px;
+    position: relative;
+}
+
+
+@media screen and (max-width:1470px ){
+    .table .headerTitle, .table .cell {
+        display: table-cell;
+        /*padding: 0 18px;*/
+    }
+ .content {
+     max-width: 750px;
+ }
+}
+
+@media screen and (max-width: 1300px) {
+    .table {
+        /*padding: 0 40px;*/
+    }
+
+
+    .title{
+        margin-left: 43px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .tabs {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .table {
+        padding: 0 0;
+    }
+    .table .headerTitle, .table .cell {
+        display: table-cell;
+        /*padding: 0 10px;*/
+    }
+    .link {
+        right:0;
+    }
+    .title {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .link {
+        bottom: -21px;
+    }
+}
+.tableMobile {
+    max-width: 450px;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .root {
+        display: unset;
+        padding: 0;
+    }
+    .tabs{
+        display: none;
+    }
+    .tableMobile{
+        margin: 0 auto;
+    }
+    .content{
+        margin-bottom: 34px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 93%;
+        padding: 0 6px;
+    }
+
+    .title{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+ .orders   :global(table){
+        margin: 0 auto;
+    }
+}
+
+
+
+.tableHeader {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 1px solid #eaf3f4;
+
+}
+
+.orderTableRow {
+    display: flex;
+    word-break: break-all;
+    border-bottom: 1px solid #E6E6E6;
+
+}
+
+.mobileTableHeader{
+    background: #eaf3f4;
+    width: 35%;
+    text-align: start;
+    padding-left: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+}
+
+.tableText{
+    width: 65%;
+    text-align: start;
+    padding-left: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+

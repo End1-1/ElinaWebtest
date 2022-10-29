@@ -1,0 +1,47 @@
+.tabs {
+    display: grid;
+}
+
+.root ul li {
+    text-align: center;
+}
+
+.root ul li .link {
+    background: #EAF1F7;
+    border-radius: 6px;
+    color: #000000;
+    padding: 24px 10px;
+    display: block;
+}
+
+.root ul li .link.active {
+    background: #1A3E59;
+    color: white;
+}
+
+.signOutLink span {
+    position: relative;
+    top: 3px;
+    margin-right: 12px;
+    color: #0177DB !important;
+}
+
+@media(min-width: 769px) {
+    .tabs {
+        grid-column-gap: 20px;
+        grid-auto-flow: column;
+    }
+}
+
+@media(max-width: 768px) {
+    .tabs {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 13px;
+    }
+}
+
+@media(max-width: 500px) {
+    .tabs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

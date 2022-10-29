@@ -1,0 +1,47 @@
+.heading:before {
+    content: '1';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #5C94BD;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    color: white;
+    margin-right: 20px;
+}
+
+.heading.billing:before {
+    content: '2';
+}
+
+.heading {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.heading.ready:before {
+    background: #6AC259;
+}
+
+.addresses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 60px;
+}
+
+.addresses button {
+    grid-column: 1 / -1;
+}
+
+.addresses > div {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.billingRoot {
+    margin-top: 50px;
+}
+

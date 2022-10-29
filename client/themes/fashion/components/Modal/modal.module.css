@@ -1,0 +1,50 @@
+.root:not(.open) {
+    display: none;
+    color: #000000;
+}
+
+.root.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(230, 230, 230, 0.7);
+    z-index: 9999999;
+}
+
+.root.open .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    max-height: 90%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 9;
+}
+
+.root .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.root .close:not(.closeIcon):before {
+    content: '\2716';
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

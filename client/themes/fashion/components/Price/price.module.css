@@ -1,0 +1,17 @@
+.oldPrice + span {
+    color: #FF4867;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.oldPrice {
+    font-weight: 400;
+    color: #8E8D8D;
+    margin-right: 14px;
+    text-decoration: line-through;
+}
+
+.root:not(.specialPrice) {
+    color: #5C94BD;
+    font-weight: 700;
+}

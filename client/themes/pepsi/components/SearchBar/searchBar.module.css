@@ -1,0 +1,138 @@
+.root {
+    display: block;
+}
+
+.root div {
+    display: inline-block;
+    position: relative;
+}
+
+.inputField {
+    position: relative;
+    border-radius: 31px;
+    border: 1px solid #DCDBDB;
+    outline: none;
+    display: block;
+    margin: auto;
+    max-width: 464px;
+    padding: 15px 354px 16px 24px;
+    z-index: 1000;
+}
+
+.inputField::placeholder {
+    font-family: "Roboto Condensed";
+    font-size: var(--text-font-size);
+}
+
+@media screen and (max-width: 992px) {
+    .inputField {
+        max-width: 372px;
+        padding: 14px 261px 14px 25px;
+    }
+}
+
+.inputMobile {
+    composes: inputField;
+    max-width: 317px;
+    padding: 10px 193px 12px 19px;
+}
+
+
+@media screen and (max-width: 380px) {
+    .inputMobile {
+        max-width: 317px;
+        padding: 14px 143px 14px 25px;
+        height: 36px;
+    }
+}
+
+.root div.loading input {
+    background-position: right 10px bottom 5px;
+    background-size: 25px;
+}
+
+.root .result {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    z-index: 999;    
+    max-height: 284px;
+    overflow-y: auto;
+    right: 0;
+    top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 4px 4px;
+    padding: 26px 19px 19px 16px;
+}
+
+.root .result .item {    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.root .result .item:not(:first-child) {
+    border-top: none;
+}
+
+.root .result .item p {
+    word-break: break-all;
+    width: 110px;
+    font-size: 14px;
+    margin-right: 12px;
+    color: #444;
+}
+
+.root .result .item img {
+    max-width: 100px;    
+}
+
+.root .result .item strong {    
+    font-size: 12px;
+    color: #910a2d;
+    width: 100%;
+    text-align: left;
+}
+
+.root .result .item p:last-child {
+    width: 100%;
+    color: #444;
+}
+
+.root .result .seeAll {
+    padding: 10px 0;
+    display: block;
+    border: 1px solid #d4d4d5;
+    border-top: none;
+    color: #444;
+    text-decoration: none;
+}
+
+.root .result .seeAll:hover {
+    color: #910a2d;
+}
+
+.searchIcon {
+    color: #999999;
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    font-size: 25px;
+    z-index: 1001;
+}
+
+.searchIconOpen {
+    composes: searchIcon;
+    right: 18px;
+    top: 9px;
+    font-size: 19px;
+}
+
+.searchIconMobile {
+    composes: searchIcon;
+    font-size: 19px;
+    position: unset;
+    color: var(--font-color);
+}

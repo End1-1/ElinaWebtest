@@ -1,0 +1,369 @@
+.root {
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.top {
+    width: auto;
+    background: #2B525A;
+}
+
+.topBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 57px;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 65px;
+}
+
+.row {
+    display: flex;
+    justify-self: center;
+}
+
+.contactsFieldRow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+
+.phone, .email, .sale, .line {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.ullang {
+    list-style: none;
+    margin-left: 10px;
+    justify-content: flex-end;
+display:flex;
+text-align:left;
+flex-wrap:wrap;
+}
+
+.lilang {
+    color:#2B525A;
+    font-size:16px;
+    list-style: none;
+}
+
+.phoneIcon {
+    composes: icon from '../IconMoon/iconMoon.module.css';
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.sale {
+    font-size: 16px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.line {
+    margin: 0 8px;
+}
+
+.link {
+    color: #000000;
+    font-size: 12px;
+    margin-left: 13px;
+    border-bottom:1px solid #000000;
+
+    
+}
+
+.link:hover, .link:focus {
+    color: #00414B;
+}
+
+.link:hover {
+    color: #00414B;
+}
+
+.middle {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+    margin: 0 auto;
+    padding: 16px 0px 15px 0px;
+    background: #FFFFFF;
+}
+
+.logoBlock {
+    justify-self: flex-start;
+    /* margin-left: 100px;
+    margin-top: 35px;
+    margin-bottom: 22px; */
+}
+
+.iconActions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
+}
+
+.userLink {
+    position: relative;
+    cursor: pointer;
+}
+
+.accountIcon {
+    justify-self: flex-end;
+    /* margin-right: 62px; */
+}
+
+.accountIcon span {
+    font-size: 25px;
+    color: #000;
+}
+
+.searchTriggerField {
+    justify-self: flex-end;
+    margin-right: 63px;
+    cursor: pointer;
+}
+
+.searchTriggerField span {
+    font-size: 25px;
+    color: #000;
+}
+
+.emailField {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.contactsField {
+    display: flex;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.email {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.searchInput {
+    background-image: url('./search.svg');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: right 0px bottom 11px;
+    height: 46px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    display: block;
+    margin: auto;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.menuRoot {
+    z-index: 100;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 31px;
+    margin-top: 45px;
+}
+
+.menuItem {
+    list-style: none;
+    margin-left: 55px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.menuItem:first-child {
+    margin-left: 0;
+}
+
+.menuItem a {
+    color: #2B525A;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.languageField {
+    margin-left: 44px;
+}
+
+.cartTrigger {
+    position: relative;
+    cursor: pointer;
+    justify-self: flex-end;
+    margin-right: 63px;
+}
+
+
+.counter {
+    font-weight: 600;
+    background-color: #841F1F;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    line-height: 9px;
+    font-size: 10px;
+    top: -7px;
+    right: -4px;
+}
+
+ .cartIcon span {
+    font-size: 25px;
+    color: #000;
+}
+
+.withoutSearch {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+.navTrigger {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .topBody {
+        grid-template-columns: 0.8fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1336px) {
+    .topBody {
+        grid-template-columns: 0fr 1fr 1fr;
+    }
+
+    .middle {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .row {
+        justify-self: left;
+    }
+
+    .withoutSearch {
+        padding: 0 65px;
+    }
+
+    .menuItem {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .topBody {
+        grid-template-columns: 0fr 1fr 0fr;
+        height: 59px;
+        padding: 0;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .row {
+        justify-self: center;
+    }
+
+    .sale {
+        white-space: unset;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .middle {
+        padding: 36px 30px 40px;
+    }
+
+    .withoutSearch {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .root {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background: #FFFFFF;
+        z-index: 11;
+    }
+
+    .middle {
+        padding: 20px;
+    }
+
+    .logoBlock {
+        justify-self: center;
+    }
+
+    .middle {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cartTrigger {
+        margin-right: 0;
+    }
+
+    .cartIcon span {
+        font-size: 27px;
+    }
+    
+    .searchTriggerField {
+        margin-right: 28px;
+    }
+
+    .searchTriggerField span {
+        font-size: 26px;
+    }
+
+
+    .navTrigger {
+        display: block;
+    }
+
+    .middleOpenSearch {
+        composes: middle;
+        grid-template-columns: 1fr 8fr;
+    }
+
+    .middleOpenSearch .logoBlock {
+        display: none;
+    }
+
+    .logoBlock img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sale {
+        font-size: 10px;
+    }
+}

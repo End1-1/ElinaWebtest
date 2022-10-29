@@ -1,0 +1,31 @@
+.button {
+  background: none;
+  font-size: 18px;
+  min-width: 300px;
+  padding: 8px 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #1f1d2b;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.6;
+}
+
+.primary {
+  background-color: #ffb800;
+  color: #1f1d2b;
+}
+
+.secondary {
+  background-color: #ffffff;
+  border: 1px solid #ffb800;
+}
+
+.iconOnly {
+  padding: 10px;
+  min-width: auto;
+}

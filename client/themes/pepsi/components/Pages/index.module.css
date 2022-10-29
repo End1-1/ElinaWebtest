@@ -1,0 +1,57 @@
+.body {
+    text-align: center;
+}
+
+.mapWrapper {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.top {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 49% 51%;
+    max-width: var( --container-width);
+    padding: 0 100px;
+    margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .top {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+    }
+}
+
+.topBanners {
+    display: grid;
+    row-gap: 21px;
+}
+
+.bottomBanners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.bottomBanners img {
+    max-width: 295px;
+}
+
+.bottom {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.productSlider {
+    margin: 30px 0;
+}

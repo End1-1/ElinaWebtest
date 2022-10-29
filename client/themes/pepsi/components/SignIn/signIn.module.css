@@ -1,0 +1,119 @@
+.root {
+    margin-bottom: 12px;
+    padding: 0 20px 0px 20px;
+    margin-top: 53px;
+}
+
+.phoneOrEmail {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.phoneOrEmail span {
+    color: var(--primary-blue-color);
+    font-size: var(--primary-font-size);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.phoneOrEmail span:hover {
+    border-bottom: none;
+}
+
+.phoneOrEmail span:hover:after, .phoneOrEmail span.active:after {
+    transform: scaleX(1);
+    transform-origin: 0 50%;
+}
+
+.phoneOrEmail span:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid var(--primary-blue-color);
+    transform: scaleX(0);
+    transition: transform .25s ease-in-out;
+}
+
+.phoneOrEmail span.active {
+    font-weight: 400;
+}
+
+.phoneOrEmail span:first-child {
+    margin-right: 20px;
+}
+
+:global(.react-tel-input) :global(.special-label) {
+    text-align: left;
+    margin-left: 1px;
+    margin-bottom: 4px;
+    font-family: 'Roboto Condensed';
+    font-size: var(--text-tablet-size);
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+}
+
+.fields .field {
+    margin-bottom: 35px;
+}
+
+.validationError {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+    color: var(--text-red-color);
+}
+
+.submitBtn button {
+    width: 100%;
+    padding: 11px 13px;
+    background: var(--primary-blue-color);
+    border-radius: 54px;
+    color: var(--primary-background-color);
+    font-family: 'Roboto Condensed Regular';
+    font-size: var(--text-font-size);
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+}
+
+.submitBtn button span {
+    float: right;
+}
+
+.submitBtn button:focus {
+    outline: none;
+}
+
+.actions {
+    text-align: left;
+}
+
+.actions button {
+    background: none !important;
+    font-weight: 300 !important;
+    padding: 0;
+    text-transform: capitalize;
+    text-align: left;
+    font-family: "Roboto Condensed";
+    font-size: var(--text-tablet-size);
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: var(--text-red-color);
+}
+
+.socialLogins {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: "Roboto Condensed Bold";
+    font-size: var(--primary-font-size);
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}

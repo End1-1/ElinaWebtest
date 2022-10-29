@@ -1,0 +1,43 @@
+.root {
+    border: 1px solid #e6e6e6;
+    max-width: 600px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-top: 10px;
+}
+
+.existingCouponCode {
+    margin: 20px 0;
+}
+
+.validationError {
+    color: #910a2d;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.review {
+    background: white;
+    padding: 20px;
+    border: 1px solid #dedede;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+.summary {
+    font-weight: bold;
+}
+
+.name {
+    border-top: 1px solid #dedede;
+    font-weight: bold;
+    padding-top: 10px;
+}

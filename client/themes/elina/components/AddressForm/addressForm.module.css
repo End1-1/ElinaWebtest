@@ -1,0 +1,155 @@
+.root {
+    padding: 21px 75px 21px 75px;
+}
+
+.rootCheckout {
+    padding-top: 18px;
+}
+
+.form {
+    text-align: center;
+}
+
+.title {
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #2B3944;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.input {
+    composes: input from '../TextInput/textInput.module.css';
+    max-width: 419px;
+    padding: 7px 16px;
+    color: #2B3944;
+}
+
+.fields {
+    display: grid;
+    grid-gap: 31px;
+}
+
+.checkoutFields {
+    composes: fields;
+    grid-template-columns: 1fr 1fr;
+    max-width: 885px;
+}
+
+.button {
+    background: none;
+    border-radius: 62px;
+    font-size: 11px;
+    min-width: 7.5rem;
+    padding: 11px 15px;
+    transition-duration: 384ms;
+    transition-property: background-color, color;
+    text-transform: uppercase;
+    line-height: 13px;
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.field {
+    position: relative;
+    text-align: left;
+}
+
+.validationError {
+    color: #910a2d;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.saveAsAddress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.selectBox {
+    composes: currentLabelField from '../Select/select.module.css';
+    border: 1px solid #2B525A;
+    max-width: 419px;
+    color: #2B3944;
+    height: 45px;
+    box-sizing: border-box;
+    font-weight: normal;
+    width: 100%;
+    display: flex !important;
+    border-radius: 3px;
+    padding: 7px 16px;
+}
+
+.selectBoxCheckout {
+    composes: selectBox;
+    margin: unset;
+}
+
+.defaultShipping {
+    text-align: left;
+    display: flex;
+    margin-top: 10px;
+}
+
+.phoneFieldInput {
+    composes: input;
+    width: 100% !important;
+    background-color: #fff !important;
+    color: #101010 !important;
+    border: 1px solid #2B525A !important;
+    height: 45px !important;
+}
+
+.phoneFieldInput:focus {
+    outline: none;
+}
+
+.addButton {
+    composes: primary from '../../components/Button/button.module.css';
+    margin-top: 35px;
+    border-radius: 0;
+    background-color: #1B1A1A;
+    max-width: 320px !important;
+    width: 100%;
+    text-transform: unset;
+    font-family: "Arial AMU";
+}
+
+.checkoutButton {
+    composes: addButton;
+    margin-top: 29px !important;
+}
+
+.selectList {
+    composes: list from '../../components/Select/select.module.css';
+    padding: 6px 40px 6px 8px;
+    z-index: 1;
+    max-height: 150px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.selectItem {
+    composes: item from  '../../components/Select/select.module.css';
+    width: 100%;
+    text-align: left;
+}
+
+@media screen and (max-width: 550px){
+    .root{
+      padding: 20px;
+    }
+    .selectBox{
+        margin: 0;
+    }
+    .fields{
+        margin: 0 auto;
+        max-width: 419px;
+    }
+}

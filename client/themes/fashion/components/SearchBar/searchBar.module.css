@@ -1,0 +1,141 @@
+.root {
+    display: block;
+}
+
+.root div {
+    display: inline-block;
+    position: relative;
+    z-index: 10000;
+}
+
+.root div input {
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: right 10px bottom 11px;
+    height: 27px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #A3A3A3;
+    outline: none;
+    display: block;
+    margin: auto;
+}
+
+.root div input:focus {
+    border-color: #85b7d9;
+}
+
+.root div.loading input {
+    /*background-image: url('./loading.gif'); */
+    background-position: right 10px bottom 5px;
+    background-size: 25px;
+}
+
+.root .result {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    background: white;
+    z-index: 999;    
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15);
+    overflow-y: auto;
+}
+
+.root .result .item {    
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #d4d4d5;
+    text-decoration: none;
+}
+
+.root .result .item:not(:first-child) {
+    border-top: none;
+}
+
+.root .result .item p {
+    word-break: break-all;
+    width: 110px;
+    font-size: 14px;
+    margin-right: 12px;
+    color: #444;
+}
+
+.root .result .item img {
+    max-width: 100px;    
+}
+
+.root .result .item strong {    
+    font-size: 12px;
+    color: #910a2d;
+    width: 100%;
+    text-align: left;
+}
+
+.root .result .item p:last-child {
+    width: 100%;
+    color: #444;
+}
+
+.root .result .seeAll {
+    padding: 10px 0;
+    display: block;
+    border: 1px solid #d4d4d5;
+    border-top: none;
+    color: #444;
+    text-decoration: none;
+}
+
+.root .result .seeAll:hover {
+    color: #910a2d;
+}
+
+@media(min-width: 993px) {
+    input {
+        width: 130px;
+    }
+    .searchIcon {
+        display: none;
+    }
+    .result {
+        top: 42px;
+        width: 250px;
+        max-height: 284px;
+    }
+    .root div {
+        top: -7px;
+    }
+}
+
+
+@media(max-width: 992px) {
+    .root > div, input {
+        width: 100%;
+    }
+    .root > div {
+        background: white;
+        padding: 18px 22px 22px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        top: 20px;
+        position: absolute;
+    }
+    input {
+        border-color: #A3A3A3;
+        padding-left: 10px;
+        padding-bottom: 7px
+    }
+    .searchIcon {
+        margin-left: 9px;
+        padding-left: 1px;
+        padding-right: 1px;
+        color: #5C94BD;
+    }
+    .result {
+        width: 100%;
+        top: 70px;
+    }
+}

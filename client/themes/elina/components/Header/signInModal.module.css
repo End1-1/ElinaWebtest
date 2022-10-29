@@ -1,0 +1,134 @@
+.signInModal {
+    text-align: left;
+}
+
+.signInModal .close {
+    display: none;
+}
+
+.content {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    font-size: 14px;
+    box-sizing: border-box;
+    z-index: 109 !important;
+}
+
+.signUpContent {
+    composes: content;
+    max-height: 665px;
+    overflow-y: scroll;
+}
+
+.signUpContent::-webkit-scrollbar {
+    width: 4px;
+}
+
+.signInSignUpBlock {
+    background-color: #fff;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+    z-index: 109 !important;
+    padding: 38px 46px;
+}
+
+.signUpBlock {
+    composes: signInSignUpBlock;
+    padding: 45px 45px;
+}
+
+.signInModal .titles {
+    text-align: right;
+    margin-bottom: 70px;
+}
+
+.signInModal .titles span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5C94BD;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.signInModal .titles span:first-child {
+    margin-right: 30px;
+}
+
+.signInModal .titles span.active {
+    font-weight: 400;
+}
+
+.titles {
+
+}
+
+.titleText {
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #2B525A;
+    margin: 0;
+    cursor: pointer;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.titleLink {
+    display: block;
+    color: #F9F1EB;
+    cursor: pointer;
+}
+
+.closeField {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    cursor: pointer;
+}
+
+.closeIcon {
+    font-size: 32px;
+    color: #1A3E59;
+}
+
+.border {
+    position: absolute;
+    opacity: 0.5;
+    border-bottom: 1px solid #2B3944;
+    right: 30px;
+    left: 30px;
+    margin-top: 40px;
+    max-width: 428px;
+}
+
+.borderSignUp {
+    composes: border;
+    margin-top: 0;
+    top: 110px;
+}
+
+.titlesSignUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.titlesSignUp div {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.titlesSignUp .titleText {
+    letter-spacing: 0.2px;
+    color: #878787;
+}
+
+.titlesSignUp .titleLink {
+    letter-spacing: 0.2px;
+    color: #2B525A;
+    margin-left: 5px;
+}

@@ -1,0 +1,218 @@
+.root {
+}
+
+.thumbnail {
+    max-height: 214px;
+    max-width: 157px;
+}
+
+td {
+    justify-self: center;
+    position: relative;
+}
+
+td:first-child {
+    justify-self: self-start;
+}
+
+.name {
+    color: #2B3944;
+}
+
+.line {
+    width: 100%;
+    max-width: 891px;
+    border: 1px solid #C4C4C4;
+}
+
+.colorAndSizeField{
+    margin-bottom: 12px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.attributeName {
+    font-size: 16px;
+    color: #2B3944;
+}
+
+.optionName {
+    color: #2B3944;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.colorField {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #C4C4C4;
+    margin-left: 15px;
+}
+
+.colorSwatch {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+
+.discountedPrice {
+    margin: 0;
+    font-size: 18px;
+    color: #D32626;
+}
+
+.discountedPrice span {
+    font-size: 10px;
+}
+
+.oldPrice {
+    margin: 0;
+    color: #2B3944;
+    font-size: 18px;
+    text-decoration: line-through;
+    margin-top: 11px;
+}
+
+.oldPrice span {
+    font-size: 10px;
+}
+
+.price {
+    margin: 0;
+    font-size: 18px;
+    color: #2B3944;
+}
+
+.price span {
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.totalPrice {
+    margin: 0;
+    color: #2B3944;
+    font-size: 18px;
+}
+
+.totalPrice span {
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.discounted {
+    color: #D32626;
+}
+
+.deleteIcon {
+    cursor: pointer;
+    color: #2B3944;
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.priceField{
+    display: flex;
+}
+
+
+.closeIcon {
+    composes: icon from '../IconMoon/iconMoon.module.css';
+    font-size: 21px;
+    color: #2B3944;
+}
+
+@media screen and (max-width: 1050px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    .discountedPriceField {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+    }
+
+    .oldPrice {
+        margin-top: 0;
+    }
+
+    .deleteIcon {
+        position: unset;
+        margin-left: 0;
+    }
+
+    .name {
+        white-space: nowrap;
+        max-width: 154px;
+        height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 15px;
+    }
+
+    .priceField {
+        margin-bottom: 15px;
+    }
+
+    .quantityField {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .oldPrice {
+        margin-top: 0;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .discountedPrice {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
+    .thumbnail {
+        max-width: 138px;
+        max-height: 185px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .closeIcon {
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 370px) {
+    .info {
+        max-width: 100px;
+    }
+}

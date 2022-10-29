@@ -1,0 +1,61 @@
+.circle {
+    width: 46px;
+    height: 46px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 19px;
+    position: relative;
+}
+@media screen and (max-width: 768px) {
+    .circle {
+        margin-top: 2px;
+    }
+}
+
+.root {
+    background: #C4C4C4;
+    color: #2B3944;
+    height: 40px;
+    width: 40px;
+    min-width: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-align: center;
+    line-height: 40px;
+    z-index: 10;
+}
+
+.root_selected {
+    composes: root;
+    background: #2B3944;
+    color: #F9F1EB;
+}
+
+.root_focused {
+    composes: root;
+}
+.root_selected_focused {
+    composes: root_selected;
+}
+
+.outOfStock {
+    background: #fff;
+    color: #2B3944;
+}
+
+.line {
+    width: 46px;
+    height: 1px;
+    background: #C4C4C4;
+    position: absolute;
+    transform: rotate(-35.84deg);
+    top: 21px;
+    right: -2px;
+    z-index: -3;
+}

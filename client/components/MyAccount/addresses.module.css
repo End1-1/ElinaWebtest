@@ -1,0 +1,21 @@
+.root {
+    padding: 10px;
+    display: block;
+}
+
+.field {
+    margin: 10px 0;
+}
+
+.addresses {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+@media(min-width: 768px) {
+    .root {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+}

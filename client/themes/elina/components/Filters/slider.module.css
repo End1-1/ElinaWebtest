@@ -1,0 +1,62 @@
+
+.root {
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.inputRange {
+    background: rgb(219, 179, 179);
+}
+
+.root span {
+    overflow-y: inherit !important;
+}
+ 
+.root :global .input-range__slider {
+    appearance: none;
+    background: #00414B;
+    border: 1px solid #00414B;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    margin-left: -0.5rem;
+    margin-top: -0.65rem;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    width: 16px;
+    left: 8px;
+}
+
+.root :global .input-range__track {
+    height: 1px;
+    background:rgba(196, 196, 196, 0.7);
+}
+
+.root :global .input-range__track--active {
+    background: #878787;
+    height: 1px;
+    margin-bottom: 2px;
+}
+
+.root :global .input-range__label--max {
+    display: none;
+}
+
+.root :global .input-range__label--min {
+    display: none;
+}
+
+.root :global .input-range__label-container {
+    left: 0;
+    font-size: 12px;
+    color: #000000;
+    top: 40px;
+}
+
+.root :global .input-range__slider-container:last-child {
+    /* position: absolute;
+    left: 95% !important; */
+}

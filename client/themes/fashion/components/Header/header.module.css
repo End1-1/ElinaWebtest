@@ -1,0 +1,116 @@
+.root {
+    text-align: center;
+    color: #444;
+    margin: 0 auto;
+    background-color: white;
+    /*font-family: 'Roboto Condensed';*/
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    background: #000000;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.top .languageBlock {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.middle {
+    display: flex;
+}
+
+.middle > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoBlock {
+    flex: 0.5;
+    text-align: left;
+}
+
+.menuBlock {
+    flex: 1;
+}
+
+.rightBlock {
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.rightBlock .searchLink {
+    cursor: pointer;
+}
+
+.rightBlock .searchLink span:before {
+    font-size: 23px;
+}
+
+.rightBlock .searchLink.open span:before {
+    color: #5C94BD;
+}
+
+@media(min-width: 993px) {
+    .openMenu {
+        display: none;
+    }
+    .languageBlock {
+        padding: 0 35px;
+    }
+    .middle > div {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .searchBlock:not(.open) {
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 992px) {
+    .top {
+        background: linear-gradient(0deg, #F8F8F8, #F8F8F8), rgba(231, 236, 239, 0.5)
+    }
+    .top :global(.row) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 14px;
+    }
+    .languageBlock {
+        padding-right: 14px;
+    }
+    .middle {
+        padding: 22px 0;
+        flex-wrap: wrap;
+    }
+    .searchBlock:not(.open) {
+        display: none;
+    }
+    .searchLink.open span:after {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        display: block;
+        content: '';
+    }
+    .searchBlock {
+        width: 100%;
+        position: relative;
+    }
+    .searchBlock > div {
+        margin: 0;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,94 @@
+.userLink {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.userLink span:before {
+    font-size: 23px;
+}
+
+.signOutLink {
+    margin-right: 20px;
+}
+
+.signInModal {
+    text-align: left;
+}
+
+.signInModal .close {
+    display: none;
+}
+
+.content {
+    composes: content from '../Modal/modal.module.css';
+    padding: 25px 30px 0 !important;
+    border-radius: 6px;
+
+}
+
+.signInModal .titles {
+    text-align: right;
+    margin-bottom: 70px;
+}
+
+.signInModal .titles span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5C94BD;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.signInModal .titles span:first-child {
+    margin-right: 30px;
+}
+
+.signInModal .titles span.active {
+    font-weight: 400;
+}
+
+.signInSignUpBlock {
+    text-align: center;
+}
+
+.signInSignUpBlock input {
+    width: 100%;
+    border-radius: 0;
+    max-width: none;
+}
+
+.signInSignUpBlock :global(.react-tel-input) input {
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #D0CFCF;
+    outline: none;
+    padding-left: 20px;
+}
+
+.signInSignUpBlock input:focus {
+    border-bottom-color: #5C94BD;
+}
+
+.signInSignUpBlock .signInsignUp {
+    margin-top: 107px;
+    background: #1A3E59;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 48px 10px;
+}
+
+.signInSignUpBlock .signInsignUp span {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.signInSignUpBlock .signInsignUp span:first-child {
+    font-weight: 300;
+    margin-right: 4px;
+}
+
+.signInSignUpBlock .signInsignUp span:last-child {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 400;
+}

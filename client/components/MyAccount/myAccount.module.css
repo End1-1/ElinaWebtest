@@ -1,0 +1,21 @@
+.root {
+    padding: 10px;
+    display: block;
+}
+
+.field {
+    margin: 10px 0;
+}
+
+@media(min-width: 768px) {
+    .root {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+}
+
+.validationError {
+    color: #910a2d;
+    font-size: 10px;
+    margin-top: 3px;
+}

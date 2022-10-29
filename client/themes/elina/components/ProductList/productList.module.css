@@ -1,0 +1,57 @@
+.root {
+    color: #444;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tabs span {
+    display: block;
+    cursor: pointer;
+}
+
+.tabs span.active {
+    border-bottom: 1px solid grey;
+}
+
+.giftCardRoot {
+    margin-top: 87px;
+}
+
+.productImage {
+    width: auto;
+    height: auto;
+    max-height: 262px;
+}
+
+.itemRoot {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.productImageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(43, 57, 68, 0.8);
+}
+
+.overlayText {
+    font-size: 22px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,209 @@
+.root {
+    width: 100%;
+}
+
+/* Directions */
+.icons {
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.icons > div {
+    cursor: pointer;
+}
+
+.directionActive {
+    border: 1px solid #dadada;
+    border-radius: 3px;
+}
+
+.buttonIconOnly {
+    padding: 8px;
+    min-width: auto;
+    height: 29px;
+}
+
+.block {
+    position: relative;
+    border: 1px dashed #dadada;
+}
+
+.draggable {
+    width: auto;
+}
+
+.block .toolbar {
+    width: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    height: 0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10000;
+}
+
+.mouseOver > div > .block > .toolbar, .mouseOver > .toolbar {
+    opacity: 1;
+    height: auto;
+}
+
+.copyFrom {
+    position: relative;
+    cursor: pointer;
+}
+
+.copyFrom ul {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    z-index: 100;
+    list-style: none;
+    width: 100px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+    background: white;
+    margin-top: 5px;
+}
+
+.copyFrom ul li {
+    padding: 5px 8px;
+}
+
+.copyFrom ul li:hover {
+    background: #FFE066;
+    color: black;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stageActions {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.yellowBtn {
+    background: #FFE066;
+    border: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/** Drag Handle **/
+
+.dragHandle {
+    background: #d4d4d4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.dragHandle span {
+    width: 4px;
+    height: 4px;
+    background: #9a9a9a;
+    display: block;
+    margin: 3px;
+}
+
+.elementWrapper {
+    margin: 12px;
+    position: relative;
+}
+
+
+.sectionInner {
+    min-height: 200px;
+}
+
+.toolbar {
+    position: fixed;
+    right: 0;
+    background: #F8F8F8;
+    z-index: 1000;
+    overflow: scroll;
+    height: 100%;
+    top: 0;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    max-width: 300px;
+    word-break: break-all;
+}
+
+.toolbar .main {
+    height: auto;
+    flex: 1 1 0%;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.save {
+    background: #5BBB59;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.close {
+    cursor: pointer;
+    text-decoration: underline;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    color: #2D2D2D;
+}
+
+.sectionSwitch {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #EFEFF1;
+    border-bottom: 1px solid #EFEFF1;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.sectionSwitch > div {
+    display: inline-flex;
+}
+
+.sectionSwitchLabel {
+    margin-left: 15px;
+}
+
+.sectionSwitchIcon {
+    composes: icon from './icon.module.css';
+    color: rgb(124, 124, 124);
+}
+
+.sectionSwitchArrow {
+    composes: icon from './icon.module.css';
+    color: #000000;
+}
+
+.sectionSwitch.visible .sectionsSwitchArrow {
+    transform: rotate(180deg);
+}

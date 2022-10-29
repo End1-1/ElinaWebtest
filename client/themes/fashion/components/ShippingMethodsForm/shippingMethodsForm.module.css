@@ -1,0 +1,97 @@
+.root {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.heading:before {
+    content: '3';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #5C94BD;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    color: white;
+    margin-right: 20px;
+}
+
+.heading.ready:before {
+    background: #6AC259;
+}
+
+.carrier {
+    margin-left: 60px;
+}
+
+.rates {
+    display: flex;
+}
+
+.rates table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.rates table thead {
+    background: #EFEFEF;
+}
+
+.rates table thead th {
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.rates table tbody td {
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.checkbox {
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.checkbox.selected {
+    background: #5C94BD;
+    border-radius: 50%;
+    position: relative;
+    border-color: transparent;
+}
+
+.checkbox.selected:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: white;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.rate {
+    border: 1px dashed var(--dark-color);
+    padding: 10px 5px;
+    align-items: center;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.carrierName {
+    font-weight: bold;
+}
+
+.isSubmitting::before {
+    color: #ff4d40;
+}

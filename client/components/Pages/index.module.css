@@ -1,0 +1,52 @@
+.body {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.mapWrapper {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.top {
+    display: grid;
+    column-gap: 12px;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 58% 41%;
+}
+
+@media screen and (max-width: 1200px) {
+    .top {
+        grid-template-columns: unset;
+        grid-gap: 10px;
+    }
+}
+
+.topBanners {
+    display: grid;
+    row-gap: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+    .topBanners {
+        row-gap: 20px;
+    }
+}
+
+.bottom {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.productSlider {
+    margin: 30px 0;
+}
+
+@media (min-width: 768px) {
+    .body {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

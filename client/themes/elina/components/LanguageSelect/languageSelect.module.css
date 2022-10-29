@@ -1,0 +1,127 @@
+.overlay {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   background: transparent;
+   width: 100%;
+   height: 500%;
+}
+
+.body {
+    display: flex;
+    position: relative;
+    z-index: 9;
+}
+
+.mobileBody {
+    composes: body;
+    flex-direction: column;
+}
+
+.nameInNative {
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.mobileName {
+    composes: nameInNative;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: #2B525A;
+}
+
+.flags {
+    width: 210px;
+    position: absolute;
+    top: 18px;
+    z-index: 100000;
+    right: 1px;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+    padding: 24px 21px;
+    padding-top: 9px;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+}
+
+.flagsMobile {
+    top: 18px;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+}
+
+.currentLanguage {
+    display: flex;
+    cursor: pointer;
+}
+
+.currentLanguageMobile {
+    composes: currentLanguage;
+    padding: 8px 33px 6px;
+}
+
+.currentLanguageMobile:hover {
+    background: #2B525A;
+}
+
+.currentLanguageMobile:hover span {
+    color: #FFFFFF;
+}
+
+.downArrow {
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+    margin-left: 8px;
+    font-size: 11px;
+}
+
+.downArrowMobile {
+    composes: downArrow;
+    color: #2B525A !important;
+}
+
+.isOpenArrow {
+    transform: rotate(180deg);
+}
+
+.lang {
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 5px 11px;
+    color: #2B3944;
+    font-size: 16px;
+}
+
+.lang:hover {
+    background: #2B525A;
+    color: #fff !important;
+}
+
+.langMobile {
+    composes: lang;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: #2B525A;
+    padding: 8px 33px 6px;
+    max-width: 184px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.border {
+    background-color: #2B525A;
+    width: 90px;
+    height: 1px;
+    margin-top: 26px;
+    margin-left: 33px;
+}
+
+.borderIsOpen {
+    composes: border;
+    margin-top: 10px;
+}

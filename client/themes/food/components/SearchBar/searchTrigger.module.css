@@ -1,0 +1,10 @@
+.root {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .root {
+    margin-left: 10px;
+  }
+}

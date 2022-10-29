@@ -1,0 +1,22 @@
+.root {
+
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+@media (min-width: 700px) {
+    .root {
+        width: var(--pwa-desktop-width);
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        min-height: 500px;
+        align-items: center;
+    }
+}

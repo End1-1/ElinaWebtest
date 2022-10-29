@@ -1,0 +1,121 @@
+.root {
+    justify-self: end;
+}
+
+.phoneField, .emailField {
+    margin-top: 18px;
+}
+
+.emailField {
+    display: flex;
+}
+
+.socialField {
+    margin-top: 74px;
+}
+
+.socialField img {
+    height: 38px;
+    width: 38px;
+}
+
+.phoneField {
+    margin-top: 0px;
+}
+
+.logo {
+    font-size: 106px;
+}
+
+.phone {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.email {
+    composes: icon from '../IconMoon/iconMoon.module.css';
+    font-size: 16px !important;
+    margin-right: 17px;
+    color: #fff;
+}
+
+.emailText {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.facebook {
+  font-size: 35px;   
+}
+
+.telegram {
+    font-size: 35px;
+    margin-left: 32px;
+}
+
+.instagram {
+    font-size: 35px;
+    margin-left: 32px;
+}
+
+.cardField {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.vizaCard {
+    font-size: 36px;
+    width: 40px;
+}
+
+.masterCard {
+    font-size: 39px;
+    margin-left: 32px;
+    width: 42px;
+}
+
+.idram {
+    width: 86px;
+    margin-left: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .socialField {
+        margin-top: 12px;
+    }
+
+    .socialField img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .vizaCard {
+        width: 22px;
+        height: 15px;
+    }
+
+    .masterCard {
+        width: 25px;
+        height: 15px;
+    }
+
+    .idram {
+        width: 53px;
+        height: 15px;
+    }
+
+    .cardField {
+        margin-top: 15px;
+    }
+
+    .email {
+        font-size: 14px !important;
+    }
+
+    .emailText {
+        font-size: 12px;
+    }
+}

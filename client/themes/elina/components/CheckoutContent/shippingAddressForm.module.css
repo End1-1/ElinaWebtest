@@ -1,0 +1,133 @@
+.root {
+}
+
+.heading {
+    color: #2B3944;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin-bottom: 29px;
+    margin: 0 0 35px;
+}
+
+.heading.ready:before {
+    background: #6AC259;
+}
+
+.addresses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.addresses :global(.react-multi-carousel-item){
+  /*width: 100%!important;*/
+  /*  min-width: 280px!important;*/
+  /*  min-height: 300px!important;*/
+}
+
+.deliveryButton {
+    composes: button from '../Button/button.module.css';
+    margin-bottom: 22px;
+    max-width: 228px;
+    width: 100%;
+    height: 45px;
+    margin-top: 12px;
+    color: #000000;
+}
+
+.deliveryButton:hover:enabled {
+    color: #FFF2F2;
+    background: #1B1A1A;
+}
+
+.deliveryButton:hover:disabled {
+    background: transparent;
+    color: #000000;
+}
+
+.deliveryButton:focus {
+    outline: none;
+}
+
+.deliveryButton span {
+    font-size: 18px;
+    text-transform: none;
+    font-family: 'Arial AMU';
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    left: 15px;
+}
+
+.action {
+    letter-spacing: 0.2px;
+    color: #2B3944;
+    font-size: 12px;
+    line-height: 32px;
+    opacity: 0.5;
+    text-decoration: underline;
+    text-transform: lowercase;
+    cursor: pointer;
+    margin: 0;
+}
+
+.addNewAddress {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #878787;
+    text-decoration: underline;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    bottom: -23px;
+}
+.addresses :global(.react-multiple-carousel__arrow){
+    z-index: 5!important;
+}
+
+
+@media screen and (max-width: 1320px) {
+    .addresses{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .addressCard{
+        /*margin-right: 20px;*/
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .addresses{
+        column-gap: 5px;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .addresses{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 815px) {
+    .addresses{
+        display: unset;
+    }
+    .addNewAddress{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}

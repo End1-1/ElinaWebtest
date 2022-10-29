@@ -1,0 +1,12 @@
+.addressBlock .name {
+    margin-bottom: 10px;
+}
+
+.checkmark:not(.selected) {
+    visibility: hidden;
+}
+
+.checkmark:before {
+    content:'\2713';
+    color: #5C94BD;
+}

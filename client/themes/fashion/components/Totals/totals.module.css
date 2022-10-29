@@ -1,0 +1,53 @@
+.root {
+    display: block;
+}
+
+.heading {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.content {
+    background: #FBFBFB;
+    padding: 15px;
+}
+
+.total span {
+    color: #656565;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.total span:last-child {
+    text-align: right;
+    color: #656565;
+}
+
+.total span:last-child span {
+    color: #656565;
+}
+
+.total {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 30px;
+    align-items: flex-end;
+    text-align: left;
+    margin: 20px 5px;
+}
+
+.grandTotal span, .subtotal span {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.grandTotal span, .subtotal span {
+    color: #000000;
+}
+
+.subtotal span {
+    font-size: 14px;
+}

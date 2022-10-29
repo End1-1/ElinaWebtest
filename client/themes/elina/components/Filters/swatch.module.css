@@ -1,0 +1,45 @@
+.root {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    margin-right: 19px;
+    margin-bottom: 9px;
+}
+
+.swatch {
+    background: #C4C4C4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+    border: none;
+}
+@media screen and (max-width: 350px) {
+.root{
+    margin-left: 10px;
+}
+}
+
+.swatch_selected {
+    composes: swatch;
+    background: #00414B;
+    color: #ffffff;
+}
+
+.swatch_focused {
+    composes: swatch;
+    background: #00414B;
+    color: #ffffff;
+}
+.swatch_selected_focused {
+    composes: swatch_selected;
+    background: #00414B;
+    color: #ffffff;
+}

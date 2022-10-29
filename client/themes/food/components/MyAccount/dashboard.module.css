@@ -1,0 +1,14 @@
+.customerInfo a, .addressesInfo a {
+    color: #0177DB;
+}
+
+.separator {
+    margin: 0 10px;
+}
+
+@media(min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+}

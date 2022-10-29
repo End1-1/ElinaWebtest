@@ -1,0 +1,19 @@
+.title {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.items {
+    margin-top: 18px;
+}
+
+.item {
+    margin-top: 18px;
+}
+
+.link {
+    color: #fff;
+    font-size: 14px;
+}

@@ -1,0 +1,42 @@
+.root h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.field {
+    margin-top: 25px;
+}
+
+.field .title {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 13px;
+    display: block;
+}
+
+.field .title:after {
+    content: '*';
+    color: #FF173E;
+    margin-left: 3px;
+}
+
+.field input {
+    border: 1px solid #D0CFCF;
+    height: 40px;
+    padding: 12px;
+    width: 100%;
+}
+
+.field textarea {
+    min-height: 111px;
+    width: 100%;
+    max-width: 370px;
+    font-family: 'Roboto Condensed';
+}
+
+.root button {
+    margin-top: 15px;
+    background: #1A3E59;
+    padding: 13px 38px;
+}

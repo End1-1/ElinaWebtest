@@ -1,0 +1,243 @@
+.root {
+    color: #444;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: flex-end;
+    right: -500px;
+    transition: all 1s ease-in-out;
+    z-index: 9999999999;
+    min-height: 765px;
+}
+
+.open {
+    display: flex;
+    right: 0;
+    width: 100%;
+    max-width: 350px;
+}
+
+.body {
+    width: 100%;
+    max-width: 350px;
+    background: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.closeIcon {
+    composes: icon from '../IconMoon/iconMoon.module.css';
+    font-size: 16px;
+    color: #F9F1EB;
+}
+
+.cartTrigger {
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.dropdown {
+    max-width: 350px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.counter {
+    font-weight: 600;
+    background-color: #00414B;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    top: -13px;
+    right: -26px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.price {
+    margin-right: 10px;
+}
+
+.thumbnail {
+    max-height: 120px;
+    max-width: 120px;
+}
+
+.totals {
+    text-align: center;
+}
+
+.grandTotal {
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+}
+
+.list {
+    height: 539px;
+    overflow-y: auto;
+    margin-left: 22px;
+    margin-bottom: 19px;
+}
+
+.list::-webkit-scrollbar {
+    width: 7px;
+    margin-right: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.sku {
+    display: block;
+    margin: 4px 0;
+}
+
+.quantity {
+    margin-right: 10px;
+}
+
+.cartIcon span {
+    font-size: 26px;
+}
+
+.header {
+    background: #28474E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.titleField {
+    margin-left: 3px;
+}
+
+.title {
+    text-transform: uppercase;
+    color: #F9F1EB;
+}
+
+.closeIcon {
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 68px;
+}
+
+.line {
+    max-width: 318px;
+    height: 0px;
+    margin: auto;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.totalField {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 21px;
+}
+
+.totalName {
+    color: #000000;
+}
+
+.totalPriceField {
+    margin-left: 4px;
+}
+
+.totalPrice {
+    color: #000000;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.cartButton {
+    width: 100%;
+    height: 45px;
+    max-width: 294px;
+    text-align: center;
+    line-height: 45px;
+    background: #1B1A1A;
+    border: none;
+    outline: none;
+    color: #FFF2F2;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.checkoutButton {
+    width: 100%;
+    height: 45px;
+    max-width: 294px;
+    line-height: 45px;
+    margin-top: 8px;
+    color: #2B3944;
+    font-size: 18px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.emptyTitleField {
+    margin-top: 109px;
+    width: 100%;
+    text-align: center;
+}
+
+.epmtyTitle {
+    font-size: 18px;
+    color: #2B3944;
+    text-transform: uppercase;
+}
+
+.emptyTextField {
+    width: 100%;
+    max-width: 264px;
+    margin: 0 auto;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.emptyText {
+    font-size: 18px;
+    color: #2B3944;
+}

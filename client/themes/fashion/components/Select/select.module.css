@@ -1,0 +1,102 @@
+.root div {
+    display: inline-block;
+    position: relative;
+}
+
+.root div p {
+    display: inline-block;
+    color: #999999;
+    font-size: 13px;
+    line-height: 43px;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 3px;
+    position: relative;
+    min-width: 150px;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.root div p span:after {
+    content: "\62";
+    color: white;
+    font-family: "fashionIcons";
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    position: absolute;
+    top: 11px;
+    right: 18px;
+    width: 7px;
+    height: 6px;
+    font-size: 7px;
+}
+
+.root div:not(.open) ul {
+    display: none;
+}
+
+.root div.open p {
+    border-color: rgb(102, 102, 102);
+    color: rgb(16, 16, 16);
+}
+
+.root div.open p span:after {
+    transform: rotate(180deg);
+}
+
+.root div p span {
+    display: block;
+    position: relative;
+    z-index: 999;
+    padding: 0 20px 0 12px;
+}
+
+.root div.open p:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+
+.root div ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    border: 1px solid rgb(213, 213, 213);
+    border-top: none;
+    text-align: left;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    z-index: 999;
+    max-height: 193px;
+    overflow-y: scroll;
+}
+
+.root div ul li {
+    padding: 15px;
+    color: rgb(153, 153, 153);
+    cursor: pointer
+}
+
+.root div ul li:hover {
+    color: rgb(16, 16, 16);
+}

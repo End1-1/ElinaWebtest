@@ -1,0 +1,13 @@
+.root {
+    
+}
+
+.input {
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #d5d5d5;
+    color: #101010;
+    max-width: 370px;
+    padding: 12px;
+}

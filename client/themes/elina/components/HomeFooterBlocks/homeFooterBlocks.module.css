@@ -1,0 +1,94 @@
+.root {
+    position: relative;
+    top: 100px;
+    margin-top: 61px;
+    margin-bottom: 85px;
+}
+
+.body {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 72px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item:first-child {
+    margin-left: 0;
+}
+
+.icon {
+    font-size: 58px;
+}
+
+
+:global .homeFooterBlockField {
+    max-width: 235px;
+}
+
+:global .homeFooterBlockFieldFirst {
+    max-width: 235px;
+}
+
+:global .homeFooterBlockTitle {
+    color: #2B3944;
+    margin-top: 21px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+:global  .homeFooterBlockText{
+    color: #2B3944;
+    font-size: 16px;
+}
+
+:global .homeFooterBlockTextField {
+    margin-top: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1090px) {
+    .body {
+        column-gap: 33px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .body {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .root{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .root {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    :global(.homeFooterBlockTitle) {
+        font-size: 10px !important;
+    }
+
+    :global(.homeFooterBlockText) {
+        font-size: 10px !important;
+    }
+
+    .icon {
+        font-size: 43px;
+    }
+}

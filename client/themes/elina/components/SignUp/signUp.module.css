@@ -1,0 +1,282 @@
+.root {
+    margin-top: 104px;
+    position: relative;
+}
+
+.phoneOrEmail {
+    text-align: center;
+    margin-top: 53px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    position: relative;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+
+.firstLastNames {
+    display: grid;
+    column-gap: 21px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.firstLastField {
+    position: relative;
+    max-width: 190px;
+    width: 100%;
+}
+
+.field {
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.validationError {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+    color: red;
+    font-weight: 300;
+    position: absolute;
+    top: 40px;
+}
+
+.validationErrorPrivacy {
+    composes: validationError;
+    top: 25px;
+}
+
+.errorField {
+    text-align: center;
+    color: red;
+    margin-bottom: 32px;
+}
+
+.errorFieldConfirm {
+    color: red;
+    position: absolute;
+    top: -12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.successField {
+    text-align: center;
+    margin: 15px auto;
+    color: green;
+}
+
+.successFieldConfirm {
+    color: green;
+    position: absolute;
+    top: -12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    composes: button from '../Button/button.module.css';
+    background: #1B1A1A;
+    margin-top: 37px;
+    max-width: 294px;
+    width: 100%;
+    height: 45px;
+}
+
+.button:hover {
+    background: #1B1A1A;
+    color: #fff;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button span {
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFF2F2;
+    font-family: 'Arial AMU';
+}
+
+.fbButton {
+    composes: button;
+    color: #fff;
+    margin-top: 18px;
+    background: #2196F3;
+    border-radius: 5px;
+    max-width: 190px;
+    height: 35px;
+    font-family: 'Arial AMU';
+    font-size: 10px;
+    padding: 10px;
+    text-align: right;
+}
+
+.fbButton:hover {
+    background-color: #2196F3;
+}
+
+.input {
+    composes: input from '../TextInput/textInput.module.css';
+    margin-bottom: 35px;
+    max-width: 400px;
+    padding: 12px;
+    color: #2B3944;
+}
+
+.input::placeholder {
+    color: #878787;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.confirmInput {
+    composes: input;
+    margin-bottom: 18px;
+}
+
+.phoneAction, .emailAction {
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 147px;
+    color: #000000;
+    background: #F9F1EB;
+    cursor: pointer;
+}
+
+.emailAction {
+    margin-left: 16px;
+}
+
+.phoneAction.active, .emailAction.active {
+    background: #fff;
+    border: 1px solid #000000;
+}
+
+.floatLabel {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    height: 100%;
+    padding: 1rem 0;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    color: #00414B;;
+}
+
+.input::placeholder::after {
+    content: "*";
+    color: #00414B;
+    margin-left: 3px;
+}
+
+.or {
+    margin: 32px auto;
+    margin-bottom: 0
+}
+
+.terms {
+    display: flex;
+    max-width: 310px;
+    text-align: start;
+    margin: 33px auto;
+}
+
+.termsText {
+    margin-left: 16px;
+    display: flex;
+}
+
+.termsAggre, .termslink {
+    white-space: nowrap
+}
+
+.checkbox {
+    width: auto !important;
+    cursor: pointer;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.termsLink {
+    margin-left: 16px;
+    color: #00414B !important;
+}
+
+
+.passwordInfoField {
+    margin-top: 5px;
+}
+
+.passwordInfo {
+    font-size: 10.5px;
+    color: #878787;
+}
+
+.togglePassword {
+    position: absolute;
+    top: 21px;
+    right: 3px;
+    cursor: pointer;
+}
+
+.titleField {
+    font-size: 10px;
+    line-height: 15px;
+    display: flex;
+    letter-spacing: 0.2px;
+    justify-content: flex-start;
+    color: #878787;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+
+}
+
+.accept {
+    margin-left: 10px;
+    position: relative;
+}
+
+.resend {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 49px;
+    margin-bottom: 50px;
+}
+
+.notReceived {
+    font-size: 12px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #878787;
+    margin-right: 5px;
+}
+
+.resendCode {
+    font-size: 12px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #2B525A;
+    text-decoration: underline;
+    cursor: pointer;
+}

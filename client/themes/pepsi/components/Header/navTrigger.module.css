@@ -1,0 +1,32 @@
+.menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    transform: translateX(-100%);
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    z-index: 10001;
+    width: 50%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        height: 100vh;
+    }
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menuOpen {
+    transform: translateX(0);
+    display: flex;
+    padding: 19px 14px 19px 14px;
+}

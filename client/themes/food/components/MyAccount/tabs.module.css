@@ -1,0 +1,44 @@
+.root {
+    display: block;
+}
+
+.root  {
+    list-style: none;
+    text-align: left;
+}
+
+.link {
+    list-style: none;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 0;
+    color: #1F1D2B!important;
+    padding: 21px 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.link.active {
+    background: #FFB800;
+    color:  #1F1D2B;
+    border-radius: 5px;
+    width:150px;
+}
+
+.signOutLink{
+    cursor: pointer;
+}
+
+.tabs {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 175px;
+}
+
+@media screen and (max-width: 768px) {
+    .tabs {
+        text-align: center;
+    }
+
+}

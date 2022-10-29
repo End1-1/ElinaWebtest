@@ -1,0 +1,51 @@
+.root {
+    padding: 15px;
+    line-height: 20px;
+    max-width: 300px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 25px;
+    border: 1px dashed var(--dark-color);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+
+.address {
+    display: flex;
+}
+
+
+.telephone {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.selected::before {
+    font-family: "mazdaIcons";
+    content: "\6a";
+    color: var(--dark-color);
+    font-size: 18px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.root p {
+    margin: 5px 0;
+}
+
+@media(min-width: 768px) {
+    .root {
+        
+    }
+}

@@ -1,0 +1,88 @@
+.root {
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.fieldPerson {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+div.fieldPerson > * {
+  width: 100%;
+}
+
+.fieldPerson > div:first-child {
+  margin-right: 24px;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: start;
+  line-height: 17px;
+  color: #1f1d2b;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 7px;
+  padding: 13px 15px;
+  background: #ffffff;
+  border: 1px solid #1f1d2b80;
+  border-radius: 3px;
+  color: #000000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  outline: none;
+}
+
+.input:focus {
+  border: 1px solid #1f1d2b;
+}
+
+.input::-webkit-input-placeholder {
+  color: #e1e1e1;
+}
+
+.input:-moz-placeholder {
+  color: #e1e1e1;
+}
+
+.input::-moz-placeholder {
+  color: #e1e1e1;
+}
+
+.input:-ms-input-placeholder {
+  color: #e1e1e1;
+}
+
+.input::placeholder {
+  color: #e1e1e1;
+}
+
+.validationError {
+  color: #910a2d;
+  font-size: 12px;
+  padding-left: 6px;
+  margin-top: 3px;
+  text-align: start;
+}
+
+.btn {
+  composes: button from "../Button/button.module.css";
+  min-width: unset;
+}

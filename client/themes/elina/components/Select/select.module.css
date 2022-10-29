@@ -1,0 +1,84 @@
+.root {
+    width: 100%;
+}
+
+.currentLabelField {
+    width: 100%;
+    max-width: 211px;
+    border: 1px solid #2B3944;
+    box-sizing: border-box;
+    padding: 8px 23px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.currentLabel {
+    color: #2B3944;
+}
+
+.downArrow {
+    composes: icon from '../IconMoon/iconMoon.module.css';
+    color: #2B3944;
+    font-size: 11px;
+    margin-left: 18px;
+    position: absolute;
+    right: 15px;
+}
+
+.root div {
+    position: relative;
+}
+
+.list {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 21px;
+    padding-bottom: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+}
+
+.item {
+    color: #2B3944;
+    padding: 5px 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.item:hover {
+    background: #2B525A;
+    color: #FFFFFF;
+}
+
+.selectLabel {
+    position: absolute;
+    bottom: 20px;
+    height: 100%;
+    font-size: 14px;
+    color: #878787;
+    left: 3px;
+}
+
+.selectLabel::after {
+    content: "*";
+    color: #00414B;
+    margin-left: 3px;
+}
+
+.hiddenList {
+    display: none;
+}
+
+@media screen and (max-width: 380px){
+    .list {
+        padding: 24px 6px;
+    }
+    .currentLabelField {
+        padding: 8px 10px;
+
+    }
+}

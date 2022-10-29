@@ -1,0 +1,31 @@
+.root {
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.listItem {
+  margin-right: 30px;
+  text-align: center;
+}
+
+.listItem:last-child {
+  margin-right: unset;
+}
+
+.anchor {
+  color: #000;
+}
+
+.anchor:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .listItem {
+    margin-right: 10px;
+  }
+}

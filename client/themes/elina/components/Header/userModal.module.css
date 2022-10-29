@@ -1,0 +1,77 @@
+.userModalField {
+    width: 210px;
+    position: absolute;
+    top: 36px;
+    z-index: 100000;
+    right: -7px;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+    padding: 24px 21px;
+    padding-top: 9px;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+}
+
+.userModalFieldMobile {
+    position: relative;
+    margin-bottom: 170px;
+}
+
+.userModalItem {
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 5px 11px;
+    color: #2B3944 !important;
+    font-size: 16px;
+    display: flex;
+    flex-direction: revert;
+    align-items: center;
+}
+
+.userModalItem:hover {
+    background: #2B525A;
+    color: #fff !important;
+}
+
+.userModalItem:hover a {
+    color: #fff !important;
+}
+
+.userModalCurrentItem {
+    composes: userModalItem;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: #2B525A !important;
+    padding: 8px 33px 6px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.item {
+    composes: userModalCurrentItem;
+    text-transform: unset;
+    margin-left: 10px;
+}
+
+.selected {
+    background: #2B525A;
+    color: #fff !important;
+}
+
+.downArrow {
+    display: flex;
+    align-items: center;
+    color: #2B525A !important;
+    margin-left: 8px;
+    font-size: 11px;
+}
+
+.userModalItem:hover .downArrow {
+    color: #FFFFFF !important;
+}
+
+.isOpenArrow {
+    transform: rotate(180deg);
+    color: #FFFFFF !important;
+}

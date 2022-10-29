@@ -1,0 +1,105 @@
+.root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    font-size: var(--text-font-size);
+    color: var(--primary-text-color);
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Roboto Condensed Regular";
+}
+
+@media screen and (max-width: 992px) {
+    .root {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .root {
+        display: flex;
+    }
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 36px 6px 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .option {
+        padding: 6px 8px 6px 8px;
+    }
+}
+
+.selectedOption {
+    composes: option;
+    background: rgba(1, 119, 219, 0.05);
+}
+
+.option img {
+    width: 27px;
+    height: 18px;
+}
+
+.option span {
+    margin-left: 6px;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .mainDiv {
+        color: #FFFFFF;
+    }
+}
+
+.mainDiv img {
+    width: 27px;
+    height: 18px;
+}
+
+.mainDiv span {
+    margin-left: 6px;
+}
+
+.customOptionsHidden {
+    display: none;
+}
+
+.customOptionsOpen {
+    display: block;
+    position: absolute;
+    z-index: 1001;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: none;
+    box-sizing: border-box;
+    border-top: 0px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .customOptionsOpen {
+        right: -8px;
+    }
+}
+
+.arrow {
+    composes: pepsiThemeIcons from '../App/app.module.css';
+    font-size: 8px;
+}
+
+.arrow::before {
+    content: var(--icon-arrow);
+}

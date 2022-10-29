@@ -1,0 +1,134 @@
+.root {
+    text-align: center;
+    position: relative;
+}
+
+.cartTrigger {
+    position: relative;
+    cursor: pointer;
+    color: var(--font-color);
+    font-size: 21px;
+}
+
+@media screen and (max-width: 768px) {
+    .cartTrigger {
+        font-size: 19px;
+    }
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: max-content;
+    text-align: left;
+    -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    padding: 26px 19px 19px 16px;    
+    background: var(--primary-background-color);
+    z-index: 1000;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.root:hover .dropdown {
+    display: initial;
+}
+
+.counter {
+    font-weight: 600;
+    background-color: var(--text-red-color);
+    border-radius: 50%;
+    color: var(--primary-background-color);
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    line-height: 19px;
+    font-size: 12px;
+    top: -13px;
+    right: -12px;
+}
+
+.footer {
+    text-align: right;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.price {
+    margin-right: 10px;
+}
+
+.thumbnailWrapper {
+
+}
+
+.thumbnail {
+    max-height: 120px;
+    max-width: 120px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.actions a button {
+    width: 100%;
+    padding: 12px 0;
+    font-family: 'Roboto Condensed';
+    font-size: var(--text-font-size);
+    line-height: 16px;
+    letter-spacing: 0.06em;
+}
+
+.actions a:first-child button {
+    margin-bottom: 9px;
+    box-sizing: border-box;
+    border-radius: 71px;
+}
+
+.actions a:last-child button {
+    background-color: var(--primary-blue-color);
+    color: var(--primary-background-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.actions a:last-child button span {
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.totals {
+    margin: 25px 9px 28px 9px;
+    font-family: "Roboto Condensed Regular";
+    font-size: var(--primary-font-size);
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+}
+
+.totals p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list {
+    max-height: 400px;
+}
+
+.sku {
+    display: block;
+    margin: 4px 0;
+}

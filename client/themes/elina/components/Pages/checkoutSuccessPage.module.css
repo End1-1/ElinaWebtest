@@ -1,0 +1,58 @@
+.modalContent {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    max-height: 90%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    z-index: 109 !important;
+    max-width: 860px !important;
+}
+
+.closeIconField {
+    position: absolute;
+    right: 45px;
+    top: 44px;
+    cursor: pointer;
+}
+
+.closeIconField span{
+    font-size: 21px;
+}
+
+@media screen and (max-width: 992px) {
+    .modalContent {
+        max-width: 800px !important;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    .modalContent {
+        max-width: 500px !important;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .modalContent {
+        max-width: 450px !important;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .modalContent {
+        max-width: 350px !important;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .modalContent {
+        max-width: 300px !important;
+    }
+}

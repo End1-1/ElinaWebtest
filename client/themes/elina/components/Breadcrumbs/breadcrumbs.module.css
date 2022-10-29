@@ -1,0 +1,26 @@
+.root {
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb::after {
+    content: '|';
+    color: #C4C4C4;
+    margin: 0 15px;
+}
+
+.crumb:last-child::after {
+    content: '';
+}
+
+.link {
+    color: #c54747;
+    text-transform: uppercase;
+}
+
+.label {
+    font-size: 16px;
+    text-transform: uppercase;
+}

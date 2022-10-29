@@ -1,0 +1,96 @@
+.table {
+    border-spacing: 1px;
+    margin: 0 auto;
+}
+
+.table th {
+    background-color: #2B525A;
+    width: 98px;
+    height: 42px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0 10px;
+}
+
+.table td {
+    background-color: rgb(45,130,143, 0.1);
+    width: 98px;
+    height: 42px;
+    color: #2B3944;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.caption {
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2B3944;
+    text-align: center;
+}
+
+.message {
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 8px;
+    color: #2B3944;
+}
+
+.headerText {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #2B3944;
+    text-align: left;
+}
+
+.footer {
+    text-align: left;
+    color: #2B3944;
+    font-size: 14px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 5px;
+    font-family: 'Arial AMU Bold';
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer img {
+    align-self: center;
+    max-width: 250px;
+}
+
+.delivery {
+    margin: 0 5px;
+    font-family: 'Arial AMU Bold';
+}
+
+@media screen and (max-width: 768px) {
+    .table th, td {
+        width: 74px !important;
+        height: 35px !important;
+        font-size: 16px !important;
+    }
+
+    .table caption {
+        margin-bottom: 30px;
+    }
+
+    .message {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .table th, td {
+        font-size: 12px !important;
+    }
+}

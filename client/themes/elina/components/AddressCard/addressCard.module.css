@@ -1,0 +1,86 @@
+.root {
+    padding: 5px 12px 8px 15px;
+    max-width: 254px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    background: #FFFFFF;
+    border: 1px solid #2B525A;
+    box-sizing: border-box;
+    border-radius: 3px;
+    line-height: 32px;
+    color: #2B3944;
+    letter-spacing: 0.2px;
+    width: 100%;
+    position: relative;
+    min-height: 222px;
+    border: 1px solid #2B525A;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.checkoutRoot {
+    composes: root;
+    border: none;
+}
+
+.selected {
+    border: 1px solid #2B525A;
+
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.row p {
+    margin: 2px 0;
+}
+
+.title {
+    opacity: 0.5;
+}
+
+.value {
+    opacity: 1;
+    left: 84px;
+    position: absolute;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.telephone {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.radioComponent {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.radioLabel {
+    letter-spacing: 0.2px;
+    color: #2B3944;
+    opacity: 0.5;
+    font-size: 12px;
+    line-height: 32px;
+    margin-left: 15px;
+}
+
+.checkBoxText {
+    margin-bottom: 17px;
+}

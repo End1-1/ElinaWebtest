@@ -1,0 +1,230 @@
+.root {
+    margin-bottom: 64px;
+}
+.cardName{
+    text-align: center;
+}
+.body {
+    width: 100%;
+}
+
+.productList {
+    margin-top: 50px;
+}
+
+.image {
+    position: relative;
+    opacity: 0.75;
+}
+
+.image img {
+    width: 100%;
+}
+
+.footerTools {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 63px;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #2B525A;
+    padding: 11px;
+    text-align: center;
+    margin-top: -4px;
+}
+
+.breadcrumbs a {
+    color: #FFFFFF;
+}
+
+
+.line {
+    display: block;
+    color: #C4C4C4;
+    margin: 0 15px;
+}
+
+.categoryNameField {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoryNameField :global h1, .categoryNameField :global p {
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.categoryName {
+    font-size: 32px;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.breadcrumbsLabel {
+    font-size: 16px;
+    color: #878787;
+    text-transform: uppercase;
+}
+
+.itemCount {
+    font-size: 14px;
+    color: #000000;
+}
+
+.toolbarField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.allField {
+    max-width: 193px;
+    text-align: start;
+}
+
+.all {
+    font-size: 24px;
+    color: #2B3944;
+    text-transform: uppercase;
+}
+
+.banner {
+    margin-top: 94px;
+    max-width: 303px;
+    letter-spacing: 0.2em;
+
+}
+
+.itemRoot {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner :global .categoryBannerField {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 118px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.bannerOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    background: #2B3944;
+    opacity: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainField {
+    max-width: 1166px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 121px;
+    grid-row-gap: 53px;
+}
+
+.imageWrapper{
+    width: 100%;
+    min-height: 150px;
+}
+
+
+.card{
+    max-width: 306px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.giftImage{
+    width: 100%;
+}
+
+@media screen  and (max-width:1400px){
+    .cards{
+        padding: 0 25px;
+    }
+    .toolbarField{
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .image {
+        overflow: hidden;
+        text-align: center;
+    }
+       .image img {
+        width: unset;
+        position: relative;
+        left: 100%;
+        margin-left: -200%;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+   .cards{
+       grid-column-gap: 30px;
+   }
+    .all{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .cards{
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        margin: 0 auto;
+        max-width: 306px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .toolbarField{
+        padding: 0 10px;
+    }
+}

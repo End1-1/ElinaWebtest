@@ -1,0 +1,23 @@
+.root {
+    padding: 10px;
+    display: block;
+}
+
+.field {
+    margin: 10px 0;
+}
+
+.orders {
+    
+}
+
+.orders table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.orders table th, .orders table td {
+    border: 1px solid #E9E8E8;
+    padding: 10px;
+}

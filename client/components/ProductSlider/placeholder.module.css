@@ -1,0 +1,21 @@
+.root {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item {
+    height: 300px;
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+    grid-gap: 10px;
+}
+
+.image {
+    background: #e4e4e4;
+}
+
+.details {
+    background: #e4e4e4;
+}

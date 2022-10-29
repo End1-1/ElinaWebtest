@@ -1,0 +1,33 @@
+.root {
+    
+}
+
+.logo {
+    height: 40px;
+}
+
+.prev {
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.next {
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.prev::before {
+    content: '<';
+}
+
+.next::before {
+    content: '>';
+}

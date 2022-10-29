@@ -1,0 +1,18 @@
+.root {
+
+}
+
+.faqs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.answer {
+    color: #6c6c6c;
+    margin-top: 10px;
+}

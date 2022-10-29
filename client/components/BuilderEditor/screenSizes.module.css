@@ -1,0 +1,17 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.root span {
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 5px 4px;
+    display: inline-block;
+}
+
+.root span.active {
+    border: 1px solid #dadada;
+    border-radius: 3px;
+}

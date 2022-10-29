@@ -1,0 +1,59 @@
+.root {
+    border: 1px solid #DBDBDB;
+    border-radius: 62px;
+    display: flex;
+    justify-content: space-between;
+    width: 93px;
+    height: 43px;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.root span {
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    flex: 1;
+    background-color: var(--dark-color);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    flex-direction: column;
+}
+
+.root span {
+    flex: 1.3;
+}
+
+.increment::before {
+    font-family: 'mazdaIcons';
+    content: "\69";
+    font-size: 10px;
+}
+
+.decrement::before {
+    font-family: 'mazdaIcons';
+    content: "\69";
+    font-size: 10px;
+}
+
+.increment {
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+@media(min-width: 768px) {
+    .root {
+        width: 112px;
+        height: 44px;
+        padding: 0;
+    } 
+}

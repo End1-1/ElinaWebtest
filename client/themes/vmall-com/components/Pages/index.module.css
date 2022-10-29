@@ -1,0 +1,37 @@
+.body {
+    
+}
+
+@media (min-width: 768px) {
+    .body {
+        display: grid;
+        grid-column-gap: 30px;
+    }
+}
+
+.featuresHeading {
+    text-align: center;
+    background-color: #14203d;
+    color: white;
+}
+
+.features .feature:nth-child(odd) {
+    flex-direction: row-reverse;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    margin: 20px 0;
+}
+
+.feature {
+    display: flex;
+}
+
+.featureContent {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.featureImage {
+    flex: 1;
+}

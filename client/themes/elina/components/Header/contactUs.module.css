@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px) {
+    .phoneDesktop {
+        display: none;
+    }
+}
+
+.number {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.phoneMobile {
+    margin-right: 10px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    .phoneMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .phoneMobile {
+        padding: 4px;
+    }
+}
+
+.phoneMobile .number {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.phoneMobile, .phoneDesktop {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.phoneIcon {
+    composes: icon from '../IconMoon/iconMoon.module.css';
+    font-size: 20px !important;
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .phoneIcon {
+        font-size: 16px !important;
+    }
+
+    .number {
+        font-size: 12px;
+        color: #ffffff;
+    }
+}

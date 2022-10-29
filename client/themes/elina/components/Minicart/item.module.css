@@ -1,0 +1,176 @@
+.root {
+    margin-top: 23px;
+}
+
+.thumbnailWrapper {
+    width: 100%;
+    max-width: 113px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body {
+    position: relative;
+    display: flex;
+}
+
+.details {
+    width: 100%;
+    position: relative;
+    margin-left: 20px;
+}
+
+.nameField {
+    min-height: 49px;
+    max-width: 159px;
+}
+
+.name {
+    font-size: 16px;
+    color: #2B3944;
+}
+
+.actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attributes {
+    font-size: 12px;
+    color: #000000;
+}
+
+.discountedPriceField {
+    display: flex;
+    align-items: center;
+}
+
+.discounted {
+    margin: 0;
+    color: #D32626;
+    font-size: 12px;
+}
+
+.discounted span {
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.oldPrice {
+    margin: 0;
+    font-size: 12px;
+    color: #2B3944;
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+
+.oldPrice span {
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.price {
+    margin: 0;
+    font-size: 12px;
+    color: #2B3944;
+}
+
+.price span {
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.attributeName {
+    font-size: 12px;
+    color: #2B3944;
+    margin-right: 2px;
+}
+
+.optionName {
+    color: #2B3944;
+    font-size: 12px;
+}
+
+.colorField {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #C4C4C4;
+}
+
+.colorSwatch {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.qtyField {
+    border: 1px solid #878787;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+.plusIcon, .minusIcon {
+    cursor: pointer;
+    color: #000000;
+}
+
+.quantity {
+    display: block;
+    margin: 0 5px;
+    font-size: 12px;
+    color: #000000;
+}
+
+.attributeItem {
+    margin-top: 9px;
+}
+
+.removeIcon {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    color: #000000;
+}
+
+
+.closeIcon {
+    composes: icon from '../IconMoon/iconMoon.module.css';
+    font-size: 12px;
+    color: #000000;
+}
+
+@media screen and (max-width: 350px) {
+    .nameField {
+        max-width: 120px;
+    }
+
+    .name {
+        font-size: 12px;
+    }
+}

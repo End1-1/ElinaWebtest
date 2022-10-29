@@ -1,0 +1,95 @@
+.root {
+    margin: 0 auto;
+    text-align: center;
+    padding: 62px 20px 119px;
+}
+
+.code {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.root h3 {
+    font-size: 48px;
+    line-height: 55px;
+    color: #2B525A;
+    margin-bottom: 25px;
+}
+
+.root p {
+    font-size: 24px;
+    line-height: 28px;
+    color: #2B525A;
+    margin-bottom: 40px;
+}
+
+.code h1 {
+    font-size: 195px;
+    color: #2B525A;
+    margin: 0 40px;
+}
+
+.button {
+    composes: button from '../Button/button.module.css';
+    max-width: 308px;
+    width: 100%;
+    padding-bottom: 16px 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .root h3 {
+        font-size: 45px;
+    }
+
+    .code h1 {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .root h3 {
+        font-size: 40px;
+    }
+
+    .code {
+        margin-bottom: 70px;
+    }
+
+    .code h1 {
+        margin: 0 24px;
+    }
+
+    .root p {
+        font-size: 20px;
+    }
+
+    .button {
+        max-width: 270px;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .root h3 {
+        font-size: 24px;
+    }
+
+    .root p {
+        font-size: 18px;
+    }
+
+    .code h1 {
+        font-size: 170px;
+    }
+
+    .button {
+        max-width: 230px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .code h1 {
+        margin: 0 10px;
+        font-size: 150px;
+    }
+}

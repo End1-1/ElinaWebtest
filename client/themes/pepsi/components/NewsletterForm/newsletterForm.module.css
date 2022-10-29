@@ -1,0 +1,61 @@
+.root {
+    font-size: var(--primary-font-size);
+    max-width: 310px;
+    width: max-content;
+    position: relative;
+}
+
+.root h2 {
+    margin-bottom: 21px;
+}
+
+.root span {
+    font-size: var(--text-font-size);
+    color: #747474;
+    white-space: nowrap;
+}
+
+.field {
+    margin-top: 13px;
+}
+
+.input {
+    background: #FFFFFF;
+    border: 1px solid #0177DB;
+    box-sizing: border-box;
+    border-radius: 49px;
+    padding: 11px 142px 12px 22px;
+    max-width: 310px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    font-family: "Roboto Condensed";
+    font-size: var(--text-font-size);
+    color: #414141;
+}
+
+.message {
+    margin-top: 10px;
+}
+
+.validationError {
+    color: #910a2d;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.joinButton {
+    background-color: #0177DB !important;
+    color: #FFFFFF !important;
+    font-size: var(--text-font-size) !important;
+    border-radius: 52px !important;
+    padding: 13px 36px !important;
+    font-weight: unset !important;
+    position: absolute !important;
+    top: 101px !important;
+    right: 0 !important;
+}

@@ -1,0 +1,107 @@
+.root {
+    display: block;
+    margin-bottom: 45px;
+}
+
+.field {
+    margin: 10px 0;
+    flex: 2;
+}
+@media screen and (max-width: 768px){
+    .input{
+        width: 100%;
+    }
+}
+.signIn {
+    margin-top: 13px;
+}
+
+.validationError {
+    color: var(--dark-color);
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+.phoneOrEmail {
+    margin: 20px 0;
+}
+
+.phoneOrEmail span {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.phoneOrEmail span.active {
+    border: 1px solid grey;
+}
+
+.title {
+    color: #2B3944;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin-bottom: 29px;
+    margin: 0 0 35px;
+}
+
+.input {
+    composes: input from '../TextInput/textInput.module.css';
+    max-width: 419px !important;
+    padding: 7px 16px;
+    color: #2B3944 !important;
+    width: 48%;
+}
+
+.phoneFieldInput {
+    composes: input;
+    width: 100% !important;
+    background-color: #fff !important;
+    color: #101010 !important;
+}
+
+.phoneFieldInput:focus {
+    outline: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.signInDiv {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.signInDiv .titleText {
+    letter-spacing: 0.2px;
+    color: #878787;
+    text-decoration: underline;
+}
+
+.signInDiv .titleLink {
+    letter-spacing: 0.2px;
+    color: #2B525A;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.validationError {
+    color: #910a2d;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 800px) {
+    .input{
+        max-width: 100% !important;
+        width: 100%;
+    }
+}

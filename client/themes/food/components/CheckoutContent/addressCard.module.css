@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  align-items: center;
+}
+
+.radioBtn {
+  composes: radioButton from "./radioButton.module.css";
+  margin-bottom: unset;
+  margin-top: 20px;
+}
+
+.label {
+  composes: label from "../AddressForm/addressForm.module.css";
+}
+
+.input {
+  composes: input from "../AddressForm/addressForm.module.css";
+}

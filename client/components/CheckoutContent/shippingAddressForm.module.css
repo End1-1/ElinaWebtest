@@ -1,0 +1,22 @@
+.root {
+    border: 1px solid #e6e6e6;
+    margin: 10px 0;
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    margin-bottom: 25px;
+    text-transform: none;
+}
+
+.heading.ready:before {
+    background: #6AC259;
+}
+
+.addresses {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

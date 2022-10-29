@@ -1,0 +1,47 @@
+.root {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+}
+
+.image img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.rating {
+    margin: 10px 0;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+.flag {
+    max-width: 30px;
+    height: auto;
+    margin-left: 10px;
+} 
+
+.name h3 {
+    margin-left: 5px;
+}
+
+.review {
+    max-width: 400px;
+}
+
+.review p {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.role {
+    text-align: start;
+}
+
+.role span {
+    font-weight: 200;
+    margin-left: 5px;
+}

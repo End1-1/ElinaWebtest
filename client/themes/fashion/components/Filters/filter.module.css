@@ -1,0 +1,69 @@
+.root {
+    background: white;
+}
+
+.root:not(.open) .optionBlock {
+    display: none;
+}
+
+.root:not(.open) {
+    height: 30px;
+}
+
+.root > p {
+    cursor: pointer;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.root > p .title {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.root > p span:not(.title) {
+    float: right;
+}
+
+.root > p span:not(.title):before {
+    transform: rotate(180deg);
+    display: inline-block;
+    font-size: 9px;
+    margin-top: 7px;
+}
+
+.root:not(.open) > p span:not(.title):before {
+    transform: rotate(0deg);
+
+}
+
+.optionBlock {
+    max-height: 263px;
+    overflow-x: auto;
+}
+
+@media(min-width: 993px) {
+    .root {
+        padding: 15px;
+    }
+    .root > p .title {
+        border-bottom: 1px solid #5C94BD;
+    }
+}
+
+@media(max-width: 992px) {
+    .root {
+        background: #F4F9FC;
+        padding: 15px 12px;
+    }
+    .root > p {
+        border-radius: 4px;
+        color: #000000;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,78 @@
+.root {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+}
+
+.image {
+    width: 113px;
+    height: 113px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.image img {
+    height: 100%;
+    max-width: none;
+}
+
+.textBlock {
+    text-align: left;
+}
+
+.rating {
+    margin: 10px 0;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.flag {
+    max-width: 30px;
+    height: auto;
+    margin-left: 15px;
+} 
+
+.name h3 {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.review {
+    max-width: 300px;
+}
+
+.review p {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    color: #8E8D8D;
+    margin-bottom: 13px;
+}
+
+.review p:after {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: #5C94BD;
+    display: block;
+    margin-top: 20px;
+}
+
+.role {
+    text-align: start;
+}
+
+.role span {
+    margin-left: 5px;
+    color: #8E8D8D;
+    font-size: 16px;
+    font-weight: 300;
+}

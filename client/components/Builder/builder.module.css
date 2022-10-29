@@ -1,0 +1,10 @@
+.root {
+    /* We need this so that builder switch icon always appears next to the builder section */
+    position: relative;
+}
+
+.editorSwitch {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+}

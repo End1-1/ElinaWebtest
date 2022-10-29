@@ -1,0 +1,41 @@
+.root {
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    margin: 5px 0;
+}
+
+.swatch {
+    background: var(--venia-swatch-bg);
+    border-color: rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: auto;
+    min-width: auto;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+.swatch span {
+    background-color: var(--venia-swatch-bg);
+    height: 16px;
+    min-width: 1rem;
+    padding: 0;
+    border-radius: 50%;
+    width: 16px;
+    --venia-swatch-bg: var(--venia-grey);
+    display: block;
+}
+
+.swatch_selected {
+    composes: swatch;
+    border: 1px solid #34c0cb;
+}
+
+.swatch_focused {
+    composes: swatch;
+}
+.swatch_selected_focused {
+    composes: swatch_selected;
+}

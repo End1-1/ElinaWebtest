@@ -1,0 +1,71 @@
+.root {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-top: 10px;
+}
+
+.existingCouponCode {
+    margin: 20px 0;
+}
+
+.validationError {
+    color: #910a2d;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.review {
+    background: white;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 25px;
+    margin-bottom: 47px;
+}
+
+.summary {
+    font-weight: bold;
+}
+
+.nameField {
+    margin: 0;
+    margin-top: 16px;
+}
+
+.name {
+    font-size: 14px;
+    color: #000000;
+}
+
+.date {
+    color: #878787;
+    font-size: 14px;
+    margin-left: 5px
+}
+
+
+.reviewText {
+    max-width: 1042px;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.showMore {
+    color: #2B3944;
+    font-size: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}

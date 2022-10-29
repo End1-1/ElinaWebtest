@@ -1,0 +1,70 @@
+.root {
+    /* display: flex;
+    align-items: center; */
+}
+
+.title {
+    font-size: 12px;
+    color: #2B3944;
+    margin: 0;
+    text-transform: uppercase; 
+}
+
+.selection {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.selectionLabel {
+    margin-right: 1rem;
+}
+
+.root select {
+    border: 1px solid  #DBDBDB;
+    background: none;
+}
+
+.vaiantName {
+    font-size: 10px;
+    color: #2B3944;
+    text-decoration: underline;
+}
+
+.titleField {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sizeGuide {
+    font-size: 14px;
+    line-height: 11px;
+    text-decoration: underline;
+    color: #2B3944;
+    cursor: pointer;
+    font-family: 'Arial AMU Bold';
+    margin-bottom: 25px;
+}
+
+.sizeGuideContent {
+    composes: content from '../Modal/modal.module.css';
+    padding: 17px 43px 26px;
+    max-width: 650px !important;
+    background: #E5E5E5;
+    width: 100% !important;
+    max-height: 480px !important;
+}
+
+.closeIcon {
+    composes: closeIconField from '../Modal/modal.module.css';
+    right: 13px;
+    top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .sizeGuideContent {
+        padding: 37px 20px 50px;
+    }
+}

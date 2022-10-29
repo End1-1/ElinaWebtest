@@ -1,0 +1,59 @@
+.root {
+    padding: 10px;
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.rates {
+    display: flex;
+}
+
+.rates table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.rates table thead {
+    background: #EFEFEF;
+}
+
+.rates table thead th {
+    padding: 5px 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.rates table tbody td {
+    padding: 5px 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.checkbox {
+    border: 1px solid #e6e6e6;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.checkbox.selected {
+    background: #eaeaea;
+}
+
+.rate {
+    border: 1px dashed var(--dark-color);
+    padding: 10px 5px;
+    align-items: center;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.carrierName {
+    font-weight: bold;
+}
+
+.isSubmitting::before {
+    color: #ff4d40;
+}

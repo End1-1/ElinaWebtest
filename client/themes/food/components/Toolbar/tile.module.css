@@ -1,0 +1,18 @@
+.root {
+  display: inline-block;
+  outline: none;
+  padding: 9px 3.1px;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1f1d2b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.root_active {
+  composes: root;
+  background-color: #ffb800;
+}

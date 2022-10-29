@@ -1,0 +1,151 @@
+.root {
+    text-align: left;
+}
+
+.validationError {
+    color: #910a2d;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+.content {
+    border: 1px solid #EAF1F7;
+    border-top: none;
+    padding: 50px;
+}
+
+.headline {
+    text-align: center;
+}
+
+.headline span {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.headline span:after {
+    content: '';
+    background: #5C94BD;
+    display: block;
+    width: 36px;
+    height: 1px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.content .fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 104px;
+}
+
+.content button {
+    padding: 13px 5px;
+    text-transform: uppercase;
+}
+
+.content > button {
+    margin-top: 20px;
+}
+
+.field {
+    margin-bottom: 12px;
+}
+
+.field input {
+    max-width: none;
+    width: 100%;
+    height: 62px;
+    border: 1px solid #5C94BD;
+    border-radius: 6px;
+}
+
+.field input:focus {
+    color: #5C94BD;
+}
+
+.field label {
+    top: 5px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions a {
+    border: 1px solid #5C94BD;
+    border-radius: 4px;
+    color: #5C94BD;
+    padding: 10.5px 0;
+    margin-right: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.backLink span {
+    font-size: 10px;
+    transform: rotate(-180deg);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media(min-width: 769px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 768px) {
+    .content {
+        padding: 30px;
+        overflow: hidden;
+    }
+}
+
+@media(min-width: 501px) {
+    .actions {
+        justify-content: flex-end;
+    }
+    .actions a,
+    .content button {
+        min-width: 180px;
+    }
+    .content .fields {
+        margin-bottom: 100px;
+    }
+    .content > button {
+        float: right;
+    }
+}
+
+@media(max-width: 500px) {
+    .content .fields {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+    .actions {
+        flex-direction: column;
+    }
+    .actions a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .actions a, .actions button, .content > button {
+        width: 100%;
+    }
+    .content > button {
+        margin-top: 0;
+    }
+    .content .fields {
+        margin-bottom: 20px;
+    }
+
+}
+
+

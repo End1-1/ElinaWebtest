@@ -1,0 +1,26 @@
+.titleField {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.imageField {
+    text-align: center;
+}
+
+.image {
+    max-width: 1000px;
+    margin: 15px auto;
+}
+
+.authorField {
+    text-align: center;
+}
+
+.author {
+    margin-left: 10px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 30px auto;
+}

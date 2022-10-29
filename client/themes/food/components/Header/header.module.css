@@ -1,0 +1,89 @@
+.root {
+  margin: 0 auto;
+  max-width: var(--container-width);
+  background-color: #ffffff;
+  padding: var(--container-padding);
+}
+
+.content {
+  display: flex;
+  padding: 21px 0;
+}
+
+.textLogo {
+  font-family: "MrBedfort";
+  color: #1f1d2b;
+  font-size: 48px;
+}
+
+.container2 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 0 87px;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.LanguageSelectContainer {
+  padding-right: 11px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  padding: 0px 3px 2px 0px;
+  cursor: pointer;
+}
+
+.iconUserBox {
+  cursor: pointer;
+}
+
+.authBarBox {
+  position: absolute;
+  top: 84px;
+  right: 45px;
+  z-index: 999;
+}
+
+@media (max-width: 576px) {
+  .root {
+    padding: var(--container-mobile-padding);
+  }
+
+  .content {
+    padding: 43px 0 21px 0;
+  }
+
+  .textLogo {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container1 {
+    order: 2;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .container2 {
+    order: 1;
+    flex: 0;
+    padding: unset;
+  }
+
+  .container3 {
+    order: 3;
+    justify-content: space-evenly;
+  }
+}

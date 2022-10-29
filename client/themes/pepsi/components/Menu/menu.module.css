@@ -1,0 +1,118 @@
+.root {
+    font-size: var(--primary-font-size);
+    font-family: "Roboto Condensed Regular";
+}
+
+@media screen and (max-width: 992px) {
+    .root {
+        font-size: var(--text-font-size);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .root {
+        font-size: var(--primary-font-size);
+    }
+}
+
+.root ul li {
+    list-style: none;
+    margin-right: 58px;
+}
+
+@media screen and (max-width: 992px) {
+    .root ul li {
+        margin-right: 39px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .root ul li {
+        margin-right: unset;
+        padding: 13px 0 8px 0px;
+    }
+}
+
+.root ul li a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.main {
+    composes: root;
+}
+
+.top {
+    
+}
+
+.top ul li {
+    list-style: none;
+}
+
+.top ul li a {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 0;
+    color: #444;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.root {
+    z-index: 100;
+    position: relative;
+    display: flex;
+}
+
+.root > ul {
+    display: flex;
+    text-align: left;
+}
+
+.root > ul > li > .submenu {
+    display: none;
+}
+
+.root > ul > li:hover .submenu {
+    display: grid;
+}
+
+.megamenu {
+    position: absolute;
+    width: 100%;
+    grid-auto-flow: column;
+    display: grid;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    background: #f1f1f1;
+    padding: 15px;
+    margin-top: 5px;
+    z-index: 100;
+    left: 0;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 100;
+    margin-top: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    background: #e0e0e0;
+}
+
+.submenu .link {
+
+}
+
+.preview ul li {
+    list-style: none;
+    padding: 5px;
+    margin: 4px;
+}
+
+.arrow {
+    font-size: 11px;
+    margin-left: 10.5px;
+}

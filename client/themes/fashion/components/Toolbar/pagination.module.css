@@ -1,0 +1,63 @@
+.root button {
+    cursor: pointer;
+    border: none !important;
+    background: none !important;
+    outline: none !important;
+    width: 20px;
+    height: 20px;
+}
+
+.root button:before {
+    font-family: "fashionIcons";
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-size: 10px;
+}
+
+.prev {
+    margin-right: 22px;
+}
+
+.prev::before {
+    content: "\62";
+    transform: rotate(90deg);
+    color: #003159;
+}
+
+.next {
+    margin-left: 22px;
+}
+
+.next::before {
+    content: "\62";
+    transform: rotate(-90deg);
+    color: #003159;
+}
+
+.root .active {
+    border: 1px solid #5C94BD !important;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    line-height: 22px
+}
+
+.root button:not(.next):not(.prev) {
+    margin: 0 5px;
+}
+
+@media(max-width: 992px) {
+    .prev {
+        margin-right: 5px;
+    }
+    .next {
+        margin-left: 5px;
+    }
+}
